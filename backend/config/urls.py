@@ -10,10 +10,12 @@ from drf_spectacular.views import (
 )
 
 api_v1_patterns = [
-    # Ilova endpointlari qadam 1.4 da qo'shiladi:
-    # path("blog/", include("apps.blog.urls")),
-    # path("portfolio/", include("apps.portfolio.urls")),
-    # ...
+    path("blog/", include("apps.blog.urls")),
+    path("portfolio/", include("apps.portfolio.urls")),
+    path("academic/", include("apps.academic.urls")),
+    path("skills/", include("apps.skills.urls")),
+    path("experience/", include("apps.experience.urls")),
+    path("contact/", include("apps.contact.urls")),
 ]
 
 urlpatterns = [

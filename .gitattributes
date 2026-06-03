@@ -1,0 +1,13 @@
+# Qator oxirlarini avtomatik normallashtirish (LF repo ichida)
+* text=auto eol=lf
+
+# Binar fayllar
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
