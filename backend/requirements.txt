@@ -1,0 +1,26 @@
+# ===== Core =====
+Django>=5.1,<5.2
+djangorestframework>=3.15,<3.16
+
+# ===== API tooling =====
+drf-spectacular>=0.27           # Swagger / OpenAPI
+django-cors-headers>=4.4        # CORS
+django-filter>=24.3             # API filtrlash
+
+# ===== Database =====
+psycopg[binary]>=3.2            # PostgreSQL driver
+
+# ===== Config =====
+python-dotenv>=1.0              # .env fayldan o'qish
+
+# ===== Async tasks =====
+celery>=5.4
+redis>=5.0
+
+# ===== Media / files =====
+Pillow>=10.4                    # rasm qayta ishlash
+django-storages[s3]>=1.14       # MinIO (S3) integratsiyasi
+boto3>=1.35
+
+# ===== Production server (keyinroq) =====
+gunicorn>=23.0

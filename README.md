@@ -58,10 +58,27 @@ To'xtatish:
 docker compose down
 ```
 
+### 3. Backend (Django) ishga tushirish
+
+```bash
+cd backend
+.venv\Scripts\activate            # Windows (PowerShell: .venv\Scripts\Activate.ps1)
+python manage.py migrate          # birinchi marta
+python manage.py runserver        # http://localhost:8000
+```
+
+| Manzil                          | Tavsif            |
+|---------------------------------|-------------------|
+| http://localhost:8000/admin/    | Django admin panel |
+| http://localhost:8000/api/docs/ | Swagger UI         |
+| http://localhost:8000/api/schema/ | OpenAPI sxema    |
+
+Dev superuser: `admin` / `admin12345` (keyin o'zgartiring).
+
 ## Ishlab chiqish bosqichlari
 
 - [x] **1.1** — Loyiha skeleti + Docker infratuzilma
-- [ ] **1.2** — Django backend asoslari
+- [x] **1.2** — Django backend asoslari (DRF, Swagger, CORS, PostgreSQL)
 - [ ] **1.3** — Modellar va admin panel
 - [ ] **1.4** — REST API
 - [ ] **1.5** — Next.js frontend asoslari
