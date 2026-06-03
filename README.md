@@ -79,7 +79,7 @@ Dev superuser: `admin` / `admin12345` (keyin o'zgartiring).
 
 - [x] **1.1** — Loyiha skeleti + Docker infratuzilma
 - [x] **1.2** — Django backend asoslari (DRF, Swagger, CORS, PostgreSQL)
-- [ ] **1.3** — Modellar va admin panel
+- [x] **1.3** — Modellar va admin panel (blog, portfolio, academic, skills, experience, contact)
 - [ ] **1.4** — REST API
 - [ ] **1.5** — Next.js frontend asoslari
 - [ ] **1.6** — Asosiy sahifalar

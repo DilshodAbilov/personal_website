@@ -57,14 +57,15 @@ THIRD_PARTY_APPS = [
     "drf_spectacular",
 ]
 
-# Lokal ilovalar (modellar qadam 1.3 da qo'shiladi)
+# Lokal ilovalar
 LOCAL_APPS = [
-    # "apps.blog",
-    # "apps.portfolio",
-    # "apps.academic",
-    # "apps.skills",
-    # "apps.experience",
-    # "apps.contact",
+    "apps.common",
+    "apps.blog",
+    "apps.portfolio",
+    "apps.academic",
+    "apps.skills",
+    "apps.experience",
+    "apps.contact",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
