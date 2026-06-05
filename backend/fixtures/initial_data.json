@@ -1,0 +1,700 @@
+[
+{
+  "model": "skills.skill",
+  "pk": 1,
+  "fields": {
+    "name": "Django",
+    "category": "backend",
+    "icon_url": "",
+    "proficiency_level": 79,
+    "years_experience": "2.0",
+    "order": 2
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 2,
+  "fields": {
+    "name": "Python",
+    "category": "backend",
+    "icon_url": "",
+    "proficiency_level": 85,
+    "years_experience": "2.0",
+    "order": 1
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 3,
+  "fields": {
+    "name": "Django REST Framework",
+    "category": "backend",
+    "icon_url": "",
+    "proficiency_level": 85,
+    "years_experience": "2.0",
+    "order": 3
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 4,
+  "fields": {
+    "name": "Celery",
+    "category": "backend",
+    "icon_url": "",
+    "proficiency_level": 70,
+    "years_experience": "1.0",
+    "order": 4
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 5,
+  "fields": {
+    "name": "REST API",
+    "category": "backend",
+    "icon_url": "",
+    "proficiency_level": 82,
+    "years_experience": "2.0",
+    "order": 5
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 6,
+  "fields": {
+    "name": "PostgreSQL",
+    "category": "database",
+    "icon_url": "",
+    "proficiency_level": 82,
+    "years_experience": "1.5",
+    "order": 1
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 7,
+  "fields": {
+    "name": "Redis",
+    "category": "database",
+    "icon_url": "",
+    "proficiency_level": 70,
+    "years_experience": "1.0",
+    "order": 2
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 8,
+  "fields": {
+    "name": "SQL",
+    "category": "database",
+    "icon_url": "",
+    "proficiency_level": 80,
+    "years_experience": "2.0",
+    "order": 3
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 9,
+  "fields": {
+    "name": "Docker",
+    "category": "devops",
+    "icon_url": "",
+    "proficiency_level": 78,
+    "years_experience": "1.5",
+    "order": 1
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 10,
+  "fields": {
+    "name": "Nginx",
+    "category": "devops",
+    "icon_url": "",
+    "proficiency_level": 65,
+    "years_experience": "1.0",
+    "order": 2
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 12,
+  "fields": {
+    "name": "Prometheus",
+    "category": "devops",
+    "icon_url": "",
+    "proficiency_level": 55,
+    "years_experience": "0.5",
+    "order": 4
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 13,
+  "fields": {
+    "name": "Grafana",
+    "category": "devops",
+    "icon_url": "",
+    "proficiency_level": 55,
+    "years_experience": "0.5",
+    "order": 5
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 14,
+  "fields": {
+    "name": "MinIO",
+    "category": "devops",
+    "icon_url": "",
+    "proficiency_level": 60,
+    "years_experience": "0.5",
+    "order": 6
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 15,
+  "fields": {
+    "name": "Git",
+    "category": "tools",
+    "icon_url": "",
+    "proficiency_level": 85,
+    "years_experience": "2.5",
+    "order": 1
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 16,
+  "fields": {
+    "name": "GitHub",
+    "category": "tools",
+    "icon_url": "",
+    "proficiency_level": 82,
+    "years_experience": "2.5",
+    "order": 2
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 17,
+  "fields": {
+    "name": "Postman",
+    "category": "tools",
+    "icon_url": "",
+    "proficiency_level": 75,
+    "years_experience": "2.0",
+    "order": 4
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 20,
+  "fields": {
+    "name": "GitLab",
+    "category": "tools",
+    "icon_url": "",
+    "proficiency_level": 75,
+    "years_experience": "1.5",
+    "order": 3
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 22,
+  "fields": {
+    "name": "AI / LLM",
+    "category": "other",
+    "icon_url": "",
+    "proficiency_level": 72,
+    "years_experience": "1.0",
+    "order": 1
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 23,
+  "fields": {
+    "name": "Machine Learning",
+    "category": "other",
+    "icon_url": "",
+    "proficiency_level": 50,
+    "years_experience": "1.0",
+    "order": 2
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 24,
+  "fields": {
+    "name": "Computer Vision (YOLO)",
+    "category": "other",
+    "icon_url": "",
+    "proficiency_level": 50,
+    "years_experience": "1.0",
+    "order": 3
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": 25,
+  "fields": {
+    "name": "OpenCV",
+    "category": "other",
+    "icon_url": "",
+    "proficiency_level": 60,
+    "years_experience": "1.0",
+    "order": 4
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-06-03T14:22:40.913Z",
+    "updated_at": "2026-06-03T14:22:40.913Z",
+    "name": "Personal Dev Space",
+    "description_uz": "Shaxsiy sayt",
+    "description_en": "",
+    "description_ru": "",
+    "technologies": "[\"Django\", \"Next.js\"]",
+    "github_url": "",
+    "demo_url": "",
+    "is_private": false,
+    "project_type": "pet",
+    "status": "active",
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 2,
+  "fields": {
+    "created_at": "2026-06-04T11:43:56.488Z",
+    "updated_at": "2026-06-04T12:14:27.272Z",
+    "name": "Bellissimo Bot",
+    "description_uz": "Bellissimo uslubidagi Telegram bot — taom va pitsa buyurtma qilish, menyu, savatcha hamda admin boshqaruvi.",
+    "description_en": "A Bellissimo-style Telegram bot for ordering food and pizza — menu, cart and admin management.",
+    "description_ru": "Telegram-бот в стиле Bellissimo для заказа еды и пиццы — меню, корзина и админ-панель.",
+    "technologies": "[\"Python\", \"Aiogram\", \"PostgreSQL\", \"Telegram Bot API\"]",
+    "github_url": "https://github.com/DilshodAbilov/BellissimoBot",
+    "demo_url": "",
+    "is_private": false,
+    "project_type": "pet",
+    "status": "completed",
+    "is_featured": true,
+    "order": 1
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 3,
+  "fields": {
+    "created_at": "2026-06-04T11:43:56.498Z",
+    "updated_at": "2026-06-04T12:14:27.275Z",
+    "name": "Voice AI Agent",
+    "description_uz": "agent.theten.ai uslubidagi ovozli AI-agent — nutqni tushunadi va real vaqtda ovozli javob beradi.",
+    "description_en": "A voice AI agent inspired by agent.theten.ai — understands speech and replies by voice in real time.",
+    "description_ru": "Голосовой AI-агент в стиле agent.theten.ai — понимает речь и отвечает голосом в реальном времени.",
+    "technologies": "[\"Python\", \"AI\", \"LLM\", \"Speech-to-Text\"]",
+    "github_url": "https://github.com/DilshodAbilov/voice",
+    "demo_url": "",
+    "is_private": true,
+    "project_type": "pet",
+    "status": "active",
+    "is_featured": true,
+    "order": 2
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 4,
+  "fields": {
+    "created_at": "2026-06-04T11:43:56.500Z",
+    "updated_at": "2026-06-04T12:14:27.277Z",
+    "name": "Education Platform",
+    "description_uz": "Ta'lim platformasi — kurslar, darslar va o'quvchilarni boshqarish uchun veb-sayt.",
+    "description_en": "An education platform — a website to manage courses, lessons and students.",
+    "description_ru": "Образовательная платформа — веб-сайт для управления курсами, уроками и студентами.",
+    "technologies": "[\"Python\", \"Django\", \"PostgreSQL\", \"HTML/CSS\"]",
+    "github_url": "https://github.com/DilshodAbilov/EducationPlatform",
+    "demo_url": "",
+    "is_private": true,
+    "project_type": "pet",
+    "status": "completed",
+    "is_featured": true,
+    "order": 3
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 5,
+  "fields": {
+    "created_at": "2026-06-04T11:43:56.501Z",
+    "updated_at": "2026-06-04T12:14:27.279Z",
+    "name": "Kahoot Clone",
+    "description_uz": "Kahoot kabi ishlaydigan real vaqtli interaktiv viktorina ilovasi — savol-javob va admin paneli.",
+    "description_en": "A real-time interactive quiz app that works like Kahoot — Q&A and an admin panel.",
+    "description_ru": "Интерактивное приложение-викторина в реальном времени в стиле Kahoot — вопросы-ответы и админ-панель.",
+    "technologies": "[\"Python\", \"Django\", \"WebSocket\", \"PostgreSQL\"]",
+    "github_url": "https://github.com/DilshodAbilov/kahoot2",
+    "demo_url": "",
+    "is_private": false,
+    "project_type": "pet",
+    "status": "completed",
+    "is_featured": false,
+    "order": 4
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 6,
+  "fields": {
+    "created_at": "2026-06-04T11:43:56.502Z",
+    "updated_at": "2026-06-04T12:14:27.281Z",
+    "name": "AI Chatbot",
+    "description_uz": "Sun'iy intellekt yordamida ishlaydigan chat-bot — foydalanuvchi savollariga aqlli javoblar beradi.",
+    "description_en": "An AI-powered chatbot that gives smart answers to user questions.",
+    "description_ru": "Чат-бот на базе ИИ, который даёт умные ответы на вопросы пользователей.",
+    "technologies": "[\"Python\", \"AI\", \"LLM\", \"NLP\"]",
+    "github_url": "https://github.com/DilshodAbilov/ChatBot",
+    "demo_url": "",
+    "is_private": true,
+    "project_type": "pet",
+    "status": "completed",
+    "is_featured": false,
+    "order": 5
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 7,
+  "fields": {
+    "created_at": "2026-06-04T11:43:56.503Z",
+    "updated_at": "2026-06-04T12:14:27.282Z",
+    "name": "Git Report — AI commit tahlilchisi",
+    "description_uz": "GitLab va GitHub commitlari (diff) ni o'qib, AI yordamida tahlil qiladi va har bir dasturchi qancha ishlaganini hisobot qilib chiqaradi.",
+    "description_en": "Reads GitLab and GitHub commit diffs and uses AI to analyze and report how much each developer contributed.",
+    "description_ru": "Читает диффы коммитов GitLab и GitHub и с помощью ИИ анализирует и формирует отчёт о вкладе каждого разработчика.",
+    "technologies": "[\"Python\", \"AI\", \"LLM\", \"GitLab API\", \"GitHub API\"]",
+    "github_url": "https://u-gitlab.uzinfocom.uz/git-report/backend",
+    "demo_url": "",
+    "is_private": true,
+    "project_type": "work",
+    "status": "active",
+    "is_featured": true,
+    "order": 6
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 8,
+  "fields": {
+    "created_at": "2026-06-04T11:43:56.505Z",
+    "updated_at": "2026-06-04T12:14:27.284Z",
+    "name": "Davlat loyihalari (UZINFOCOM)",
+    "description_uz": "Yagona Integrator UZINFOCOM'da backend dasturchi sifatida davlat veb-loyihalari ustida ishladim.",
+    "description_en": "Worked as a backend developer on government web projects at UZINFOCOM (Yagona Integrator).",
+    "description_ru": "Работал backend-разработчиком над государственными веб-проектами в UZINFOCOM.",
+    "technologies": "[\"Python\", \"Django\", \"PostgreSQL\", \"Docker\"]",
+    "github_url": "",
+    "demo_url": "",
+    "is_private": false,
+    "project_type": "work",
+    "status": "active",
+    "is_featured": false,
+    "order": 7
+  }
+},
+{
+  "model": "experience.experience",
+  "pk": 2,
+  "fields": {
+    "company": "Yagona Integrator UZINFOCOM",
+    "position": "Backend Developer",
+    "description_uz": "Davlat veb-loyihalari uchun ishonchli backend tizimlar ishlab chiqaman: REST API, ma'lumotlar bazasi va integratsiyalar.",
+    "description_en": "Building reliable backend systems for government web projects: REST APIs, databases and integrations.",
+    "description_ru": "Разрабатываю надёжные backend-системы для государственных веб-проектов: REST API, базы данных и интеграции.",
+    "start_date": "2026-01-05",
+    "end_date": null,
+    "technologies": "[\"Python\", \"Django\", \"Django REST Framework\", \"PostgreSQL\", \"Docker\", \"Redis\"]",
+    "responsibilities": "[\"REST API va backend servislarni loyihalash va ishlab chiqish\", \"PostgreSQL bilan ma'lumotlar bazasi modellari va optimizatsiya\", \"Docker yordamida konteynerlash va deploy\", \"Tashqi tizimlar bilan integratsiyalar\"]",
+    "order": 0
+  }
+},
+{
+  "model": "academic.academicwork",
+  "pk": 2,
+  "fields": {
+    "created_at": "2026-06-04T13:31:09.971Z",
+    "updated_at": "2026-06-04T13:51:03.835Z",
+    "title_uz": "Controlling Information Reliability at Border Points",
+    "title_en": "Controlling Information Reliability at Border Points",
+    "title_ru": "",
+    "abstract_uz": "ICMSI — Multidisiplinar fanlar va innovatsiyalar bo'yicha xalqaro konferensiya doirasidagi ilmiy maqola.",
+    "abstract_en": "",
+    "abstract_ru": "",
+    "work_type": "conference",
+    "year": 2026,
+    "language": "en",
+    "keywords": "[\"axborot xavfsizligi\", \"chegara nazorati\", \"ishonchlilik\"]",
+    "authors": "[\"Abilov Dilshod Bekzod o'g'li\"]",
+    "supervisor": "",
+    "file": "academic/44-48.pdf",
+    "is_full_text_public": false,
+    "source_url": "https://worldsiencepub.com/index.php/icmsi/article/view/10698",
+    "doi": "https://doi.org/10.5281/zenodo.20522198",
+    "openaire_url": "https://explore.openaire.eu/search/result?pid=10.5281/zenodo.20522198",
+    "certificate_url": "/img_9.png",
+    "diploma_url": "",
+    "views_count": 0,
+    "downloads_count": 0
+  }
+},
+{
+  "model": "academic.academicwork",
+  "pk": 3,
+  "fields": {
+    "created_at": "2026-06-04T13:31:09.988Z",
+    "updated_at": "2026-06-04T13:51:03.840Z",
+    "title_uz": "Problems and Solutions of Information Exchange in Integrated Communication Systems",
+    "title_en": "Problems and Solutions of Information Exchange in Integrated Communication Systems",
+    "title_ru": "",
+    "abstract_uz": "EIMRC — Ethiopian International Multidisciplinary Research Conferences doirasidagi ilmiy maqola.",
+    "abstract_en": "",
+    "abstract_ru": "",
+    "work_type": "conference",
+    "year": 2026,
+    "language": "en",
+    "keywords": "[\"integratsiyalashgan tizimlar\", \"axborot almashinuvi\", \"aloqa\"]",
+    "authors": "[\"Abilov Dilshod Bekzod o'g'li\"]",
+    "supervisor": "",
+    "file": "academic/23-29.pdf",
+    "is_full_text_public": false,
+    "source_url": "https://eijmr.org/conferences/index.php/eimrc/article/view/2338",
+    "doi": "https://doi.org/10.5281/zenodo.20527153",
+    "openaire_url": "https://explore.openaire.eu/search/result?pid=10.5281/zenodo.20527153",
+    "certificate_url": "/img_10.png",
+    "diploma_url": "",
+    "views_count": 0,
+    "downloads_count": 0
+  }
+},
+{
+  "model": "academic.academicwork",
+  "pk": 4,
+  "fields": {
+    "created_at": "2026-06-04T13:31:09.991Z",
+    "updated_at": "2026-06-04T13:51:03.842Z",
+    "title_uz": "Chegara punktlarida axborot oqimlarini markazlashtirish va standartlashtirish mexanizmlari",
+    "title_en": "",
+    "title_ru": "",
+    "abstract_uz": "“Taraqqiyot spektri” elektron jurnalining 2-jild 5-sonida chop etilgan ilmiy maqola.",
+    "abstract_en": "",
+    "abstract_ru": "",
+    "work_type": "article",
+    "year": 2026,
+    "language": "uz",
+    "keywords": "[\"axborot oqimlari\", \"markazlashtirish\", \"standartlashtirish\"]",
+    "authors": "[\"Abilov Dilshod Bekzod o'g'li\"]",
+    "supervisor": "Raimjonova G.I",
+    "file": "academic/Certificate_Abilov.png",
+    "is_full_text_public": false,
+    "source_url": "https://unipublish.uz/index.php/fivti/article/view/639",
+    "doi": "",
+    "openaire_url": "",
+    "certificate_url": "/img_11.png",
+    "diploma_url": "/img_12.png",
+    "views_count": 0,
+    "downloads_count": 0
+  }
+},
+{
+  "model": "academic.academicwork",
+  "pk": 5,
+  "fields": {
+    "created_at": "2026-06-04T13:31:09.994Z",
+    "updated_at": "2026-06-04T13:51:03.844Z",
+    "title_uz": "Sun'iy intellekt nazariyasi va amaliyoti: tajriba, muammolar va istiqbollar",
+    "title_en": "",
+    "title_ru": "",
+    "abstract_uz": "“Sun'iy intellekt nazariyasi va amaliyoti: tajriba, muammolar va istiqbollar” mavzusidagi 2-Respublika ilmiy-amaliy anjumani tezisi.",
+    "abstract_en": "",
+    "abstract_ru": "",
+    "work_type": "thesis",
+    "year": 2025,
+    "language": "uz",
+    "keywords": "[\"sun'iy intellekt\", \"mashinali o'qitish\"]",
+    "authors": "[\"Abilov Dilshod Bekzod o'g'li\"]",
+    "supervisor": "",
+    "file": "academic/Respublika_tezis_Bigdata.jpg.docx",
+    "is_full_text_public": false,
+    "source_url": "",
+    "doi": "",
+    "openaire_url": "",
+    "certificate_url": "",
+    "diploma_url": "",
+    "views_count": 0,
+    "downloads_count": 0
+  }
+},
+{
+  "model": "academic.academicwork",
+  "pk": 6,
+  "fields": {
+    "created_at": "2026-06-04T13:31:09.996Z",
+    "updated_at": "2026-06-04T13:51:03.846Z",
+    "title_uz": "“Kvark” dasturi uchun guvohnoma (DGU № 57062)",
+    "title_en": "",
+    "title_ru": "",
+    "abstract_uz": "Elektron hisoblash mashinalari uchun yaratilgan “Kvark” dasturining O'zbekiston Respublikasi Adliya vazirligida rasmiy ro'yxatdan o'tkazilganligi to'g'risidagi guvohnoma.",
+    "abstract_en": "",
+    "abstract_ru": "",
+    "work_type": "dgu",
+    "year": 2025,
+    "language": "uz",
+    "keywords": "[\"DGU\", \"Kvark\", \"dasturiy ta'minot\"]",
+    "authors": "[\"Rustamova Moxichexra Yaxshiboyevna\", \"Abilov Dilshod Bekzod o'g'li\", \"Avazbekov Sayfulla Ravshanbek o'g'li\"]",
+    "supervisor": "",
+    "file": "",
+    "is_full_text_public": false,
+    "source_url": "",
+    "doi": "",
+    "openaire_url": "",
+    "certificate_url": "/img_13.png",
+    "diploma_url": "",
+    "views_count": 0,
+    "downloads_count": 0
+  }
+},
+{
+  "model": "academic.academicwork",
+  "pk": 7,
+  "fields": {
+    "created_at": "2026-06-04T13:51:03.849Z",
+    "updated_at": "2026-06-04T13:51:03.849Z",
+    "title_uz": "Kelajak texnologiyalari ko'rgazmasi — Oliygoh kubogi",
+    "title_en": "",
+    "title_ru": "",
+    "abstract_uz": "Muhammad al-Xorazmiy nomidagi TATU “Oliygoh kubogi” tanlovlar haftaligi doirasidagi “Kelajak texnologiyalari ko'rgazmasi” musobaqasi ishtiroki uchun sertifikat.",
+    "abstract_en": "",
+    "abstract_ru": "",
+    "work_type": "certificate",
+    "year": 2026,
+    "language": "uz",
+    "keywords": "[\"TATU\", \"ko'rgazma\", \"innovatsiya\"]",
+    "authors": "[\"Abilov Dilshod Bekzod o'g'li\"]",
+    "supervisor": "",
+    "file": "",
+    "is_full_text_public": false,
+    "source_url": "",
+    "doi": "",
+    "openaire_url": "",
+    "certificate_url": "/img_14.png",
+    "diploma_url": "",
+    "views_count": 0,
+    "downloads_count": 0
+  }
+},
+{
+  "model": "contact.sociallink",
+  "pk": 1,
+  "fields": {
+    "platform": "github",
+    "label": "",
+    "url": "https://github.com/DilshodAbilov",
+    "is_active": true,
+    "order": 0
+  }
+},
+{
+  "model": "contact.sociallink",
+  "pk": 2,
+  "fields": {
+    "platform": "linkedin",
+    "label": "",
+    "url": "https://www.linkedin.com/in/dilshod-abilov/",
+    "is_active": true,
+    "order": 0
+  }
+},
+{
+  "model": "contact.sociallink",
+  "pk": 3,
+  "fields": {
+    "platform": "telegram",
+    "label": "",
+    "url": "https://t.me/DilshodAbilovv",
+    "is_active": true,
+    "order": 0
+  }
+},
+{
+  "model": "contact.sociallink",
+  "pk": 4,
+  "fields": {
+    "platform": "instagram",
+    "label": "",
+    "url": "https://www.instagram.com/dilshod__abilov",
+    "is_active": true,
+    "order": 0
+  }
+},
+{
+  "model": "contact.sociallink",
+  "pk": 5,
+  "fields": {
+    "platform": "twitter",
+    "label": "",
+    "url": "https://x.com/dilshod_abilov",
+    "is_active": true,
+    "order": 0
+  }
+},
+{
+  "model": "contact.sociallink",
+  "pk": 6,
+  "fields": {
+    "platform": "facebook",
+    "label": "",
+    "url": "https://www.facebook.com/profile.php?id=61585309805845",
+    "is_active": true,
+    "order": 0
+  }
+},
+{
+  "model": "contact.sociallink",
+  "pk": 7,
+  "fields": {
+    "platform": "email",
+    "label": "",
+    "url": "mailto:abilovdilshod55@gmail.com",
+    "is_active": true,
+    "order": 0
+  }
+},
+{
+  "model": "contact.sociallink",
+  "pk": 8,
+  "fields": {
+    "platform": "youtube",
+    "label": "",
+    "url": "https://www.youtube.com/@dilshod__abilov",
+    "is_active": true,
+    "order": 0
+  }
+},
+{
+  "model": "common.siteprofile",
+  "pk": 1,
+  "fields": {
+    "avatar": "profile/dilshod1.jpg",
+    "updated_at": "2026-06-05T04:57:35.124Z"
+  }
+}
+]
