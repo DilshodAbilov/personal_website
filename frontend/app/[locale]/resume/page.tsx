@@ -7,7 +7,6 @@ import {
   getAcademicWorks,
   getExperience,
   getFeaturedProjects,
-  getProfile,
   getSkills,
 } from "@/lib/api";
 
@@ -40,12 +39,11 @@ export default async function ResumePage({
   const tSkills = await getTranslations("Skills");
   const tAcademic = await getTranslations("Academic");
 
-  const [skills, experience, projects, academic, profile] = await Promise.all([
+  const [skills, experience, projects, academic] = await Promise.all([
     getSkills(),
     getExperience(),
     getFeaturedProjects(),
     getAcademicWorks(),
-    getProfile(),
   ]);
 
   const languages = t.raw("languages") as { name: string; level: string }[];
@@ -70,7 +68,7 @@ export default async function ResumePage({
         <header className="flex items-center gap-6 border-b border-zinc-200 pb-6 print:gap-4 print:pb-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={profile?.avatar || "/dilshod.jpg"}
+            src="/dilshod1.jpg"
             alt={FULL_NAME}
             className="h-24 w-24 shrink-0 rounded-full object-cover ring-2 ring-zinc-200 print:h-20 print:w-20"
           />

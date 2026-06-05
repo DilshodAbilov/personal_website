@@ -8,10 +8,8 @@ import type { SocialLink } from "@/lib/types";
 
 export function Hero({
   socials,
-  avatar,
 }: {
   socials: SocialLink[];
-  avatar?: string | null;
 }) {
   const t = useTranslations("Hero");
 
@@ -115,7 +113,7 @@ export function Hero({
               <div className="animate-float-sm relative h-64 w-64 overflow-hidden rounded-[2rem] border border-border bg-surface shadow-2xl sm:h-80 sm:w-80">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={avatar || "/dilshod.jpg"}
+                  src="/dilshod1.jpg"
                   alt={t("name")}
                   className="h-full w-full object-cover"
                 />

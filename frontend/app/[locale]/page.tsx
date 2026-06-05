@@ -10,7 +10,6 @@ import { AcademicSection } from "@/components/sections/academic-section";
 import { ContactSection } from "@/components/sections/contact-section";
 import {
   getExperience,
-  getProfile,
   getProjects,
   getSkills,
   getSocials,
@@ -24,12 +23,11 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const [skills, projects, experience, socials, profile] = await Promise.all([
+  const [skills, projects, experience, socials] = await Promise.all([
     getSkills(),
     getProjects(),
     getExperience(),
     getSocials(),
-    getProfile(),
   ]);
 
   const tStats = await getTranslations("Stats");
@@ -50,7 +48,7 @@ export default async function HomePage({
 
   return (
     <>
-      <Hero socials={socials} avatar={profile?.avatar} />
+      <Hero socials={socials} />
       <TechMarquee items={techNames} />
 
       <Section className="scroll-mt-20">
