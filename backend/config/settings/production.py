@@ -37,7 +37,7 @@ if REDIS_URL:
         }
     }
 
-_USE_S3 = bool(env("MINIO_ROOT_USER") and env("MINIO_ENDPOINT"))
+_USE_S3 = env_bool("USE_S3", False)
 if _USE_S3:
     STORAGES = {
         "default": {
