@@ -1,6 +1,38 @@
 from django.db import models
 
 
+class SocialLink(models.Model):
+    """Ijtimoiy tarmoq / aloqa havolasi (footer va aloqa bo'limida ko'rsatiladi)."""
+
+    class Platform(models.TextChoices):
+        GITHUB = "github", "GitHub"
+        LINKEDIN = "linkedin", "LinkedIn"
+        TELEGRAM = "telegram", "Telegram"
+        INSTAGRAM = "instagram", "Instagram"
+        TWITTER = "twitter", "X (Twitter)"
+        YOUTUBE = "youtube", "YouTube"
+        FACEBOOK = "facebook", "Facebook"
+        EMAIL = "email", "Email"
+        WEBSITE = "website", "Veb-sayt"
+        OTHER = "other", "Boshqa"
+
+    platform = models.CharField(
+        "Platforma", max_length=20, choices=Platform.choices, default=Platform.OTHER
+    )
+    label = models.CharField("Nom (ixtiyoriy)", max_length=50, blank=True)
+    url = models.CharField("Havola", max_length=300, help_text="To'liq URL yoki mailto:email")
+    is_active = models.BooleanField("Faol", default=True)
+    order = models.PositiveIntegerField("Tartib", default=0)
+
+    class Meta:
+        verbose_name = "Ijtimoiy tarmoq"
+        verbose_name_plural = "Ijtimoiy tarmoqlar"
+        ordering = ["order", "id"]
+
+    def __str__(self) -> str:
+        return f"{self.get_platform_display()} — {self.url}"
+
+
 class ContactMessage(models.Model):
     """Aloqa formasidan kelgan xabar."""
 

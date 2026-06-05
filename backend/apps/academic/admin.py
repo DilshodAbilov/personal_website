@@ -14,5 +14,7 @@ class AcademicWorkAdmin(admin.ModelAdmin):
         ("Annotatsiya", {"fields": ("abstract_uz", "abstract_en", "abstract_ru")}),
         ("Ma'lumotlar", {"fields": ("work_type", "year", "language", "keywords", "authors", "supervisor")}),
         ("Fayl", {"fields": ("file", "is_full_text_public")}),
+        ("Havolalar", {"fields": ("source_url", "doi", "openaire_url")}),
+        ("Sertifikat / diplom", {"fields": ("certificate_url", "diploma_url")}),
         ("Statistika", {"fields": ("views_count", "downloads_count", "created_at", "updated_at")}),
     )

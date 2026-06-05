@@ -1,0 +1,156 @@
+{
+  "Meta": {
+    "title": "Personal Dev Space — Backend Developer",
+    "description": "Backend dasturchi portfoliosi, blogi va ilmiy ishlari"
+  },
+  "Nav": {
+    "home": "Bosh sahifa",
+    "about": "Men haqimda",
+    "skills": "Ko'nikmalar",
+    "projects": "Loyihalar",
+    "blog": "Blog",
+    "academic": "Ilmiy ishlar",
+    "contact": "Aloqa"
+  },
+  "Hero": {
+    "badge": "Ish uchun ochiq",
+    "greeting": "Salom, mening ismim",
+    "name": "Dilshod Abilov",
+    "patronymic": "Bekzod o'g'li",
+    "role": "Backend Developer",
+    "bio": "Django, PostgreSQL va Docker bilan ishonchli backend tizimlar quraman. O'rganganlarimni yozib boraman.",
+    "ctaProjects": "Loyihalarni ko'rish",
+    "ctaResume": "Rezyume yuklab olish",
+    "ctaContact": "Bog'lanish"
+  },
+  "Stats": {
+    "projects": "Loyihalar",
+    "articles": "Maqolalar",
+    "experience": "Yil tajriba",
+    "skills": "Texnologiyalar"
+  },
+  "Sections": {
+    "skillsTitle": "Ko'nikmalar",
+    "skillsSubtitle": "Men ishlatadigan texnologiyalar va asboblar",
+    "projectsTitle": "Tanlangan loyihalar",
+    "projectsSubtitle": "So'nggi va eng yaxshi ishlarim",
+    "viewAll": "Hammasini ko'rish"
+  },
+  "About": {
+    "title": "Men haqimda",
+    "subtitle": "Dasturiy injiniring, backend va doimiy o'rganish",
+    "intro": "Men backend dasturchiman — Toshkent Axborot Texnologiyalari Universitetida Dasturiy Injiniring yo'nalishida tahsil olaman. Ishonchli, kengaytiriladigan tizimlar qurishni va o'rganganlarimni baham ko'rishni yaxshi ko'raman.",
+    "educationTitle": "Ta'lim",
+    "experienceTitle": "Ish tajribasi",
+    "valuesTitle": "Tamoyillarim",
+    "values": [
+      "Ko'p narsalarni o'rganaman, hammasini yozib boraman",
+      "Sodda va o'qiladigan kod",
+      "Avtomatlashtirish va monitoring",
+      "Ochiq kod hamjamiyatiga hissa"
+    ],
+    "present": "hozirgi"
+  },
+  "Skills": {
+    "title": "Ko'nikmalar",
+    "subtitle": "Filtrlash uchun kategoriyani tanlang",
+    "all": "Barchasi",
+    "categories": {
+      "backend": "Backend",
+      "database": "Database",
+      "devops": "DevOps",
+      "tools": "Asboblar",
+      "design": "Dizayn",
+      "other": "Boshqa"
+    },
+    "yearsShort": "yil"
+  },
+  "Projects": {
+    "title": "Loyihalar",
+    "subtitle": "Pet, ish va open source loyihalarim",
+    "all": "Barchasi",
+    "viewCode": "Kod",
+    "liveDemo": "Demo",
+    "privateNote": "Bu loyiha private — faqat ruxsat etilgan foydalanuvchilar kira oladi.",
+    "types": {
+      "pet": "Pet loyiha",
+      "work": "Ish loyihasi",
+      "opensource": "Open Source"
+    },
+    "statuses": {
+      "active": "Faol",
+      "completed": "Yakunlangan",
+      "archived": "Arxiv"
+    }
+  },
+  "Contact": {
+    "title": "Bog'lanish",
+    "subtitle": "Savol, taklif yoki hamkorlik — yozing, javob beraman",
+    "name": "Ismingiz",
+    "email": "Email",
+    "subject": "Mavzu",
+    "message": "Xabar",
+    "send": "Yuborish",
+    "sending": "Yuborilmoqda...",
+    "success": "Xabaringiz yuborildi! Tez orada javob beraman.",
+    "error": "Xatolik yuz berdi. Qaytadan urinib ko'ring.",
+    "subjects": {
+      "job": "Ish taklifi",
+      "collab": "Hamkorlik",
+      "question": "Savol",
+      "other": "Boshqa"
+    },
+    "socialTitle": "Ijtimoiy tarmoqlar"
+  },
+  "Academic": {
+    "title": "Ilmiy ishlar",
+    "subtitle": "Maqolalar, tezislar va DGU guvohnomalari",
+    "types": {
+      "thesis": "Tezis",
+      "course": "Kurs ishi",
+      "dgu": "DGU",
+      "article": "Maqola",
+      "conference": "Konferensiya",
+      "certificate": "Sertifikat / Yutuq"
+    },
+    "supervisor": "Rahbar",
+    "keywords": "Kalit so'zlar",
+    "download": "Yuklab olish",
+    "source": "Manba",
+    "certificate": "Sertifikat",
+    "diploma": "Diplom",
+    "empty": "Hozircha ilmiy ishlar qo'shilmagan"
+  },
+  "Resume": {
+    "download": "PDF yuklab olish",
+    "back": "Saytga qaytish",
+    "role": "Backend Developer",
+    "location": "Toshkent, O'zbekiston",
+    "summaryTitle": "Qisqacha",
+    "summary": "Toshkent Axborot Texnologiyalari Universitetida Dasturiy injiniring yo'nalishida tahsil olayotgan backend dasturchi. Python va Django asosida ishonchli, kengaytiriladigan backend tizimlar, REST API va integratsiyalar quraman. UZINFOCOM'da davlat loyihalarida ishlayman. Sun'iy intellekt va DevOps'ga qiziqaman, doimiy o'rganaman.",
+    "experienceTitle": "Ish tajribasi",
+    "projectsTitle": "Loyihalar",
+    "educationTitle": "Ta'lim",
+    "educationDegree": "Dasturiy injiniring",
+    "educationSchool": "Toshkent Axborot Texnologiyalari Universiteti (TATU)",
+    "skillsTitle": "Ko'nikmalar",
+    "languagesTitle": "Tillar",
+    "languages": [
+      { "name": "O'zbek", "level": "Ona tili" },
+      { "name": "Rus", "level": "Yaxshi" },
+      { "name": "Ingliz", "level": "O'rta" }
+    ],
+    "certificationsTitle": "Sertifikatlar va nashrlar",
+    "present": "hozir"
+  },
+  "Footer": {
+    "tagline": "Django bilan quriladi, qahva bilan quvvatlanadi.",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "builtWith": "Next.js va Django bilan qurilgan"
+  },
+  "Common": {
+    "loading": "Yuklanmoqda...",
+    "error": "Ma'lumotni yuklab bo'lmadi",
+    "empty": "Hozircha ma'lumot yo'q"
+  }
+}

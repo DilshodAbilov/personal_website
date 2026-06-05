@@ -1,0 +1,156 @@
+{
+  "Meta": {
+    "title": "Personal Dev Space — Backend разработчик",
+    "description": "Портфолио, блог и научные работы backend-разработчика"
+  },
+  "Nav": {
+    "home": "Главная",
+    "about": "Обо мне",
+    "skills": "Навыки",
+    "projects": "Проекты",
+    "blog": "Блог",
+    "academic": "Научные работы",
+    "contact": "Контакты"
+  },
+  "Hero": {
+    "badge": "Открыт к работе",
+    "greeting": "Привет, меня зовут",
+    "name": "Dilshod Abilov",
+    "patronymic": "Bekzod o'g'li",
+    "role": "Backend Developer",
+    "bio": "Создаю надёжные backend-системы на Django, PostgreSQL и Docker. Пишу обо всём, что изучаю.",
+    "ctaProjects": "Смотреть проекты",
+    "ctaResume": "Скачать резюме",
+    "ctaContact": "Связаться"
+  },
+  "Stats": {
+    "projects": "Проектов",
+    "articles": "Статей",
+    "experience": "Лет опыта",
+    "skills": "Технологий"
+  },
+  "Sections": {
+    "skillsTitle": "Навыки",
+    "skillsSubtitle": "Технологии и инструменты, с которыми я работаю",
+    "projectsTitle": "Избранные проекты",
+    "projectsSubtitle": "Мои последние и лучшие работы",
+    "viewAll": "Смотреть все"
+  },
+  "About": {
+    "title": "Обо мне",
+    "subtitle": "Программная инженерия, backend и непрерывное обучение",
+    "intro": "Я backend-разработчик, изучаю программную инженерию в Ташкентском университете информационных технологий. Люблю создавать надёжные, масштабируемые системы и делиться тем, что изучаю.",
+    "educationTitle": "Образование",
+    "experienceTitle": "Опыт работы",
+    "valuesTitle": "Мои принципы",
+    "values": [
+      "Изучаю многое — записываю всё",
+      "Простой, читаемый код",
+      "Автоматизация и мониторинг",
+      "Вклад в open source"
+    ],
+    "present": "настоящее время"
+  },
+  "Skills": {
+    "title": "Навыки",
+    "subtitle": "Выберите категорию для фильтра",
+    "all": "Все",
+    "categories": {
+      "backend": "Backend",
+      "database": "База данных",
+      "devops": "DevOps",
+      "tools": "Инструменты",
+      "design": "Дизайн",
+      "other": "Другое"
+    },
+    "yearsShort": "г."
+  },
+  "Projects": {
+    "title": "Проекты",
+    "subtitle": "Мои pet, рабочие и open source проекты",
+    "all": "Все",
+    "viewCode": "Код",
+    "liveDemo": "Демо",
+    "privateNote": "Этот проект приватный — доступ только у авторизованных пользователей.",
+    "types": {
+      "pet": "Pet проект",
+      "work": "Рабочий проект",
+      "opensource": "Open Source"
+    },
+    "statuses": {
+      "active": "Активный",
+      "completed": "Завершён",
+      "archived": "Архив"
+    }
+  },
+  "Contact": {
+    "title": "Связаться",
+    "subtitle": "Вопрос, предложение или сотрудничество — напишите мне",
+    "name": "Ваше имя",
+    "email": "Email",
+    "subject": "Тема",
+    "message": "Сообщение",
+    "send": "Отправить",
+    "sending": "Отправка...",
+    "success": "Сообщение отправлено! Скоро отвечу.",
+    "error": "Произошла ошибка. Попробуйте снова.",
+    "subjects": {
+      "job": "Предложение работы",
+      "collab": "Сотрудничество",
+      "question": "Вопрос",
+      "other": "Другое"
+    },
+    "socialTitle": "Социальные сети"
+  },
+  "Academic": {
+    "title": "Научные работы",
+    "subtitle": "Статьи, тезисы и свидетельства (DGU)",
+    "types": {
+      "thesis": "Тезис",
+      "course": "Курсовая",
+      "dgu": "DGU",
+      "article": "Статья",
+      "conference": "Конференция",
+      "certificate": "Сертификат / Награда"
+    },
+    "supervisor": "Руководитель",
+    "keywords": "Ключевые слова",
+    "download": "Скачать",
+    "source": "Источник",
+    "certificate": "Сертификат",
+    "diploma": "Диплом",
+    "empty": "Научных работ пока нет"
+  },
+  "Resume": {
+    "download": "Скачать PDF",
+    "back": "На сайт",
+    "role": "Backend Developer",
+    "location": "Ташкент, Узбекистан",
+    "summaryTitle": "О себе",
+    "summary": "Backend-разработчик, обучаюсь по направлению «Программная инженерия» в Ташкентском университете информационных технологий. Создаю надёжные масштабируемые backend-системы, REST API и интеграции на Python и Django. Работаю над государственными проектами в UZINFOCOM. Интересуюсь ИИ и DevOps, постоянно учусь.",
+    "experienceTitle": "Опыт работы",
+    "projectsTitle": "Проекты",
+    "educationTitle": "Образование",
+    "educationDegree": "Программная инженерия",
+    "educationSchool": "Ташкентский университет информационных технологий (TATU)",
+    "skillsTitle": "Навыки",
+    "languagesTitle": "Языки",
+    "languages": [
+      { "name": "Узбекский", "level": "Родной" },
+      { "name": "Русский", "level": "Хорошо" },
+      { "name": "Английский", "level": "Средний" }
+    ],
+    "certificationsTitle": "Сертификаты и публикации",
+    "present": "наст. время"
+  },
+  "Footer": {
+    "tagline": "Сделано на Django, работает на кофе.",
+    "rights": "Все права защищены.",
+    "builtWith": "Создано с Next.js и Django"
+  },
+  "Common": {
+    "loading": "Загрузка...",
+    "error": "Не удалось загрузить данные",
+    "empty": "Пока ничего нет"
+  }
+}

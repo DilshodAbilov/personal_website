@@ -19,3 +19,23 @@ class TimeStampedModel(models.Model):
     class Meta:
         abstract = True
         ordering = ["-created_at"]
+
+
+class SiteProfile(models.Model):
+    """Sayt profili (yagona yozuv) — asosiy sahifa fotosi admin'dan boshqariladi."""
+
+    avatar = models.ImageField(
+        "Asosiy foto", upload_to="profile/", blank=True, null=True
+    )
+    updated_at = models.DateTimeField("Yangilangan", auto_now=True)
+
+    class Meta:
+        verbose_name = "Sayt profili"
+        verbose_name_plural = "Sayt profili"
+
+    def __str__(self) -> str:
+        return "Sayt profili"
+
+    def save(self, *args, **kwargs):
+        self.pk = 1  # singleton — har doim bitta yozuv
+        super().save(*args, **kwargs)

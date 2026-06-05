@@ -10,6 +10,7 @@ from drf_spectacular.views import (
 )
 
 api_v1_patterns = [
+    path("profile/", include("apps.common.urls")),
     path("blog/", include("apps.blog.urls")),
     path("portfolio/", include("apps.portfolio.urls")),
     path("academic/", include("apps.academic.urls")),
@@ -20,9 +21,7 @@ api_v1_patterns = [
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # API v1
     path("api/v1/", include((api_v1_patterns, "api"), namespace="v1")),
-    # OpenAPI schema + Swagger / Redoc
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path(
         "api/docs/",
@@ -36,6 +35,5 @@ urlpatterns = [
     ),
 ]
 
-# Dev'da media fayllarni Django orqali ko'rsatish
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

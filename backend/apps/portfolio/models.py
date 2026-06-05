@@ -30,6 +30,11 @@ class Project(TimeStampedModel):
     )
     github_url = models.URLField("GitHub havola", blank=True)
     demo_url = models.URLField("Live Demo havola", blank=True)
+    is_private = models.BooleanField(
+        "Private repo",
+        default=False,
+        help_text="Belgilansa, saytda 'private — ruxsat etilganlar kiradi' ogohlantirishi chiqadi",
+    )
 
     project_type = models.CharField(
         "Loyiha turi", max_length=20, choices=ProjectType.choices, default=ProjectType.PET

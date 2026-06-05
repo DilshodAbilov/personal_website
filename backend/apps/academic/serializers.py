@@ -14,5 +14,7 @@ class AcademicWorkSerializer(serializers.ModelSerializer):
             "work_type", "work_type_display", "year", "language",
             "keywords", "authors", "supervisor",
             "file", "is_full_text_public",
+            "source_url", "doi", "openaire_url",
+            "certificate_url", "diploma_url",
             "views_count", "downloads_count", "created_at",
         ]

@@ -1,0 +1,364 @@
+@import "tailwindcss";
+
+/* Class asosida dark mode (next-themes) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ============================================================
+   Dizayn tokenlari (TZ §11)
+   ============================================================ */
+:root {
+  --background: #ffffff;
+  --background-alt: #f8f8f8;
+  --surface: #f2f2f2;
+  --border: #e5e5e5;
+  --foreground: #0a0a0a;
+  --muted: #555555;
+  --muted-foreground: #707070;
+  --accent: #0066cc;
+  --accent-hover: #0052a3;
+  --accent-foreground: #ffffff;
+  --accent-soft: rgba(0, 102, 204, 0.1);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --background-alt: #111111;
+  --surface: #1a1a1a;
+  --border: #2a2a2a;
+  --foreground: #ffffff;
+  --muted: #a0a0a0;
+  --muted-foreground: #707070;
+  --accent: #00d9ff;
+  --accent-hover: #33e1ff;
+  --accent-foreground: #0a0a0a;
+  --accent-soft: rgba(0, 217, 255, 0.1);
+}
+
+/* ============================================================
+   Tailwind theme mapping
+   ============================================================ */
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --animate-marquee: marquee 30s linear infinite;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Chop etish (CV → PDF) */
+@media print {
+  body {
+    background: #ffffff;
+  }
+  @page {
+    margin: 9mm;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+  border: 2px solid var(--background);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--foreground), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glass {
+    background: color-mix(in srgb, var(--background) 70%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Nuqtali (dot) fon — hero uchun */
+  .bg-grid {
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      var(--border) 1px,
+      transparent 0
+    );
+    background-size: 32px 32px;
+  }
+
+  .glow {
+    box-shadow: 0 0 0 1px var(--border), 0 8px 40px -12px var(--accent-soft);
+  }
+
+  /* iOS 26 uslubidagi "liquid glass" panel */
+  .glass-panel {
+    background: color-mix(in srgb, var(--surface) 72%, transparent);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+    box-shadow:
+      0 14px 44px -14px rgba(0, 0, 0, 0.45),
+      inset 0 1px 0 0 color-mix(in srgb, #ffffff 32%, transparent);
+  }
+
+  /* Och temada yanada yaltiroq, ajralib turadigan shisha */
+  :root .glass-panel {
+    background: color-mix(in srgb, #ffffff 72%, transparent);
+  }
+  .dark .glass-panel {
+    background: color-mix(in srgb, var(--surface) 76%, transparent);
+  }
+
+  /* Yengil shisha — tugma / chip / input uchun (soyasiz) */
+  .glass-chip {
+    background: color-mix(in srgb, var(--surface) 60%, transparent);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+  }
+  :root .glass-chip {
+    background: color-mix(in srgb, #ffffff 62%, transparent);
+  }
+  .dark .glass-chip {
+    background: color-mix(in srgb, var(--surface) 62%, transparent);
+  }
+
+  /* Shisha tugma yaltirashi (sheen) */
+  .glass-sheen {
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+      0 8px 24px -8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ============================================================
+   Animatsiyalar
+   ============================================================ */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Karta rasmlari almashganda (about bo'limi) */
+@keyframes img-swap {
+  0% {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-img-swap {
+  animation: img-swap 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Katta rasm mayda bo'laklarga bo'linib uchib ketishi (shatter) */
+@keyframes shatter {
+  to {
+    transform: translate(var(--tx, 0), var(--ty, 0)) scale(0.12)
+      rotate(var(--rot, 0deg));
+    opacity: 0;
+  }
+}
+
+.animate-shatter {
+  animation: shatter 0.65s cubic-bezier(0.4, 0, 1, 1) forwards;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* Logo ismi ustidan sochiluvchi zarrachalar */
+@keyframes particle {
+  0% {
+    opacity: 0;
+    transform: translate(0, 3px) scale(0.4);
+  }
+  25% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx, 0px), -18px) scale(1);
+  }
+}
+
+.animate-particle {
+  animation: particle 2.4s ease-in-out infinite;
+  box-shadow: 0 0 6px var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-particle,
+  .animate-particle-lg {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+/* Logoni markazda katta ochish (overlay) */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.25s ease-out both;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translateY(12px);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-pop {
+  animation: pop 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Katta ko'rinishdagi zarrachalar */
+@keyframes particle-burst {
+  0% {
+    opacity: 0;
+    transform: translate(0, 6px) scale(0.3);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx, 0px), -42px) scale(1.1);
+  }
+}
+
+.animate-particle-lg {
+  animation: particle-burst 3s ease-in-out infinite;
+  box-shadow: 0 0 8px var(--accent);
+}
+
+/* Logo rasmini jonlantirish */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+.animate-float {
+  animation: float 3.2s ease-in-out infinite;
+}
+
+@keyframes float-sm {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-float-sm {
+  animation: float-sm 3.6s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-sm,
+  .animate-spin-slow {
+    animation: none;
+  }
+}

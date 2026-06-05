@@ -85,3 +85,12 @@ class BlogPost(TimeStampedModel):
 
     def __str__(self) -> str:
         return self.title_uz or self.title_en or self.slug
+
+# class Post(TimeStampedModel):
+#     title_ru = models.CharField("Kontent (RU)", max_length=255)
+#     title_en = models.CharField("Kontent (EN)", max_negth=255)
+#     title_en = models.CharField("Kontent (UZ)", max_length=255)
+#     author = models.CharField("Kontent (UZ)", max_length=255)
+#     slug = models.CharField("Sarlavha (UZ)", max_length=255)
+#     slug_en  models>CharField
+

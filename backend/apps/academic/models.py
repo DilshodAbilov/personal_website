@@ -13,6 +13,7 @@ class AcademicWork(TimeStampedModel):
         DGU = "dgu", "DGU (amaliyot hisoboti)"
         ARTICLE = "article", "Ilmiy maqola"
         CONFERENCE = "conference", "Konferensiya maqolasi"
+        CERTIFICATE = "certificate", "Sertifikat / Yutuq"
 
     title_uz = models.CharField("Sarlavha (UZ)", max_length=300)
     title_en = models.CharField("Sarlavha (EN)", max_length=300, blank=True)
@@ -38,6 +39,15 @@ class AcademicWork(TimeStampedModel):
 
     file = models.FileField("Fayl (PDF)", upload_to="academic/", blank=True, null=True)
     is_full_text_public = models.BooleanField("To'liq matn ochiq", default=False)
+
+    # Tashqi havolalar
+    source_url = models.URLField("Nashr / manba havolasi", blank=True)
+    doi = models.URLField("DOI havolasi", blank=True)
+    openaire_url = models.URLField("OpenAIRE havolasi", blank=True)
+
+    # Sertifikat / diplom rasmlari (statik yo'l yoki URL, masalan /img_9.png)
+    certificate_url = models.CharField("Sertifikat rasmi", max_length=300, blank=True)
+    diploma_url = models.CharField("Diplom rasmi", max_length=300, blank=True)
 
     views_count = models.PositiveIntegerField("Ko'rishlar", default=0)
     downloads_count = models.PositiveIntegerField("Yuklab olishlar", default=0)

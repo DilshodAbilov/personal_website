@@ -1,0 +1,156 @@
+{
+  "Meta": {
+    "title": "Personal Dev Space — Backend Developer",
+    "description": "Backend developer portfolio, blog and academic works"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "blog": "Blog",
+    "academic": "Academic",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "badge": "Open to work",
+    "greeting": "Hi, my name is",
+    "name": "Dilshod Abilov",
+    "patronymic": "Bekzod o'g'li",
+    "role": "Backend Developer",
+    "bio": "I build reliable backend systems with Django, PostgreSQL and Docker. I write about everything I learn.",
+    "ctaProjects": "View Projects",
+    "ctaResume": "Download Resume",
+    "ctaContact": "Get in touch"
+  },
+  "Stats": {
+    "projects": "Projects",
+    "articles": "Articles",
+    "experience": "Years exp.",
+    "skills": "Technologies"
+  },
+  "Sections": {
+    "skillsTitle": "Skills",
+    "skillsSubtitle": "Technologies and tools I work with",
+    "projectsTitle": "Featured projects",
+    "projectsSubtitle": "My latest and best work",
+    "viewAll": "View all"
+  },
+  "About": {
+    "title": "About me",
+    "subtitle": "Software engineering, backend and continuous learning",
+    "intro": "I'm a backend developer studying Software Engineering at Tashkent University of Information Technologies. I love building reliable, scalable systems and sharing what I learn.",
+    "educationTitle": "Education",
+    "experienceTitle": "Experience",
+    "valuesTitle": "My principles",
+    "values": [
+      "Learn many things, write all of them down",
+      "Simple, readable code",
+      "Automation and monitoring",
+      "Contribute to open source"
+    ],
+    "present": "present"
+  },
+  "Skills": {
+    "title": "Skills",
+    "subtitle": "Pick a category to filter",
+    "all": "All",
+    "categories": {
+      "backend": "Backend",
+      "database": "Database",
+      "devops": "DevOps",
+      "tools": "Tools",
+      "design": "Design",
+      "other": "Other"
+    },
+    "yearsShort": "yr"
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "My pet, work and open source projects",
+    "all": "All",
+    "viewCode": "Code",
+    "liveDemo": "Demo",
+    "privateNote": "This project is private — only authorized users can access it.",
+    "types": {
+      "pet": "Pet project",
+      "work": "Work project",
+      "opensource": "Open Source"
+    },
+    "statuses": {
+      "active": "Active",
+      "completed": "Completed",
+      "archived": "Archived"
+    }
+  },
+  "Contact": {
+    "title": "Get in touch",
+    "subtitle": "A question, an offer or a collaboration — write to me",
+    "name": "Your name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Your message was sent! I'll reply soon.",
+    "error": "Something went wrong. Please try again.",
+    "subjects": {
+      "job": "Job offer",
+      "collab": "Collaboration",
+      "question": "Question",
+      "other": "Other"
+    },
+    "socialTitle": "Social links"
+  },
+  "Academic": {
+    "title": "Academic works",
+    "subtitle": "Articles, theses and software certificates (DGU)",
+    "types": {
+      "thesis": "Thesis",
+      "course": "Coursework",
+      "dgu": "DGU",
+      "article": "Article",
+      "conference": "Conference",
+      "certificate": "Certificate / Award"
+    },
+    "supervisor": "Supervisor",
+    "keywords": "Keywords",
+    "download": "Download",
+    "source": "Source",
+    "certificate": "Certificate",
+    "diploma": "Diploma",
+    "empty": "No academic works yet"
+  },
+  "Resume": {
+    "download": "Download PDF",
+    "back": "Back to site",
+    "role": "Backend Developer",
+    "location": "Tashkent, Uzbekistan",
+    "summaryTitle": "Summary",
+    "summary": "Backend developer studying Software Engineering at Tashkent University of Information Technologies. I build reliable, scalable backend systems, REST APIs and integrations with Python and Django. Currently working on government projects at UZINFOCOM. Passionate about AI and DevOps, always learning.",
+    "experienceTitle": "Experience",
+    "projectsTitle": "Projects",
+    "educationTitle": "Education",
+    "educationDegree": "Software Engineering",
+    "educationSchool": "Tashkent University of Information Technologies (TATU)",
+    "skillsTitle": "Skills",
+    "languagesTitle": "Languages",
+    "languages": [
+      { "name": "Uzbek", "level": "Native" },
+      { "name": "Russian", "level": "Good" },
+      { "name": "English", "level": "Intermediate" }
+    ],
+    "certificationsTitle": "Certifications & Publications",
+    "present": "Present"
+  },
+  "Footer": {
+    "tagline": "Built with Django, powered by coffee.",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js and Django"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "Failed to load data",
+    "empty": "Nothing here yet"
+  }
+}
