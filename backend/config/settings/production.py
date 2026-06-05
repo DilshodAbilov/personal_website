@@ -7,9 +7,10 @@ from .base import MIDDLEWARE, env, env_bool, env_list
 DEBUG = False
 
 ALLOWED_HOSTS = env_list("DJANGO_ALLOWED_HOSTS", "")
-RAILWAY_DOMAIN = env("RAILWAY_PUBLIC_DOMAIN")
-if RAILWAY_DOMAIN and RAILWAY_DOMAIN not in ALLOWED_HOSTS:
-    ALLOWED_HOSTS.append(RAILWAY_DOMAIN)
+for _host_env in ("RAILWAY_PUBLIC_DOMAIN", "RENDER_EXTERNAL_HOSTNAME"):
+    _h = env(_host_env)
+    if _h and _h not in ALLOWED_HOSTS:
+        ALLOWED_HOSTS.append(_h)
 
 CSRF_TRUSTED_ORIGINS = [
     f"https://{h}" for h in ALLOWED_HOSTS if h not in ("localhost", "127.0.0.1")
