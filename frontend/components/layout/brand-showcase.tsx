@@ -5,7 +5,6 @@ import type { CSSProperties } from "react";
 import { X } from "lucide-react";
 import { BrandLogo } from "@/components/layout/brand-logo";
 
-// Katta ko'rinishdagi ism atrofida sochiluvchi zarrachalar
 const BIG_PARTICLES = [
   { l: 2, t: 70, d: 0, x: -6 },
   { l: 10, t: 30, d: 0.8, x: 4 },
@@ -45,7 +44,6 @@ export function BrandShowcase() {
 
   return (
     <>
-      {/* Bosiladigan logo (header) */}
       <button
         type="button"
         onClick={() => setOpen(true)}
@@ -55,7 +53,6 @@ export function BrandShowcase() {
         <BrandLogo />
       </button>
 
-      {/* Markaziy katta ko'rinish */}
       {open && (
         <div
           onClick={() => setOpen(false)}
@@ -73,10 +70,8 @@ export function BrandShowcase() {
             onClick={(e) => e.stopPropagation()}
             className="animate-pop relative flex flex-col items-center gap-7 text-center"
           >
-            {/* Orqa glow (pulslovchi) */}
             <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-72 w-72 -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-full bg-accent/20 blur-3xl" />
 
-            {/* Katta logo — suzib turadi + aylanuvchi nurli halqa */}
             <div className="animate-float relative">
               <div className="animate-spin-slow absolute -inset-2 -z-10 rounded-[2.2rem] bg-[conic-gradient(from_0deg,var(--accent),transparent_35%,var(--accent)_70%,transparent)] opacity-80 blur-[3px]" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -87,7 +82,6 @@ export function BrandShowcase() {
               />
             </div>
 
-            {/* Ism + zarrachalar */}
             <div className="relative">
               <h2 className="text-gradient font-mono text-4xl font-bold tracking-tight sm:text-6xl">
                 Dilshod Abilov

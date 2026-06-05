@@ -1,4 +1,3 @@
-// lucide-react'da brand ikonkalar olib tashlangani uchun o'z SVG'larimiz.
 type IconProps = { className?: string };
 
 export function GithubIcon({ className }: IconProps) {

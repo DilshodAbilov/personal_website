@@ -2,10 +2,6 @@
 
 import { useRef } from "react";
 
-/**
- * Sichqoncha harakatiga qarab 3D qiyshayadigan (parallaks) karta.
- * prefers-reduced-motion yoqilgan bo'lsa qiyshaymaydi.
- */
 export function TiltCard({
   children,
   className = "",

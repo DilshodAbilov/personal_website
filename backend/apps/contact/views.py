@@ -5,7 +5,6 @@ from apps.common.utils import get_client_ip
 from .models import SocialLink
 from .serializers import ContactMessageSerializer, SocialLinkSerializer
 
-
 class ContactMessageCreateView(generics.CreateAPIView):
     """Aloqa formasi xabarini qabul qiladi (ochiq endpoint)."""
 
@@ -14,8 +13,6 @@ class ContactMessageCreateView(generics.CreateAPIView):
 
     def perform_create(self, serializer):
         serializer.save(ip_address=get_client_ip(self.request))
-        # TODO (keyingi bosqich): Telegram/email orqali xabar yuborish (Celery)
-
 
 class SocialLinkListView(generics.ListAPIView):
     """Faol ijtimoiy tarmoq havolalari ro'yxati (ochiq endpoint)."""

@@ -17,7 +17,6 @@ export function Hero({
 
   return (
     <section id="home" className="relative scroll-mt-20 overflow-hidden">
-      {/* Yumshoq aura fon (nuqtali fon o'rniga) */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-24 left-[12%] h-96 w-96 rounded-full bg-accent/20 blur-[120px]" />
         <div className="absolute -bottom-16 right-[8%] h-80 w-80 rounded-full bg-accent/10 blur-[130px]" />
@@ -25,12 +24,9 @@ export function Hero({
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-        {/* Butun hero — bitta katta 3D shisha ramka */}
         <TiltCard className="glass-panel rounded-3xl p-6 sm:p-10">
           <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
-            {/* ===== Chap: matn ===== */}
             <div className="order-2 flex flex-col items-center text-center lg:order-1 lg:items-start lg:text-left">
-            {/* Status badge */}
             <div className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 px-4 py-1.5 text-xs font-medium text-muted">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
@@ -39,14 +35,11 @@ export function Hero({
               {t("badge")}
             </div>
 
-            {/* Greeting */}
             <p className="animate-fade-up mt-6 text-sm text-muted sm:text-base">
               {t("greeting")}
             </p>
 
-            {/* Logo + ism (zarrachalar bilan) — yuqoridagi brending bilan bir xil */}
             <div className="animate-fade-up mt-2 flex items-center justify-center gap-3 sm:gap-4 lg:justify-start">
-              {/* Logo — suzadi + aylanuvchi och ko'k halqa (showcase bilan bir xil) */}
               <div className="animate-float-sm relative shrink-0">
                 <div className="animate-spin-slow absolute -inset-1.5 -z-10 rounded-2xl bg-[conic-gradient(from_0deg,var(--accent),transparent_35%,var(--accent)_70%,transparent)] opacity-80 blur-[3px]" />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -65,7 +58,6 @@ export function Hero({
               {t("patronymic")}
             </p>
 
-            {/* Role with accent underline */}
             <div className="animate-fade-up mt-5">
               <span className="font-mono text-base font-semibold text-accent sm:text-lg">
                 {t("role")}
@@ -73,12 +65,10 @@ export function Hero({
               <span className="mt-2 block h-1 w-16 rounded-full bg-accent/60 lg:mx-0 mx-auto" />
             </div>
 
-            {/* Bio */}
             <p className="animate-fade-up mt-6 max-w-lg text-base leading-relaxed text-muted sm:text-lg">
               {t("bio")}
             </p>
 
-            {/* CTAs */}
             <div className="animate-fade-up mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
               <a
                 href="#projects"
@@ -96,7 +86,6 @@ export function Hero({
               </Link>
             </div>
 
-            {/* Socials */}
             {socials.length > 0 && (
               <div className="animate-fade-up mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
                 {socials.map((s) => {
@@ -118,14 +107,11 @@ export function Hero({
             )}
             </div>
 
-          {/* ===== O'ng: foto ===== */}
           <div className="animate-fade-up order-1 flex justify-center lg:order-2 lg:justify-end">
             <div className="relative">
-              {/* Orqa fon halqasi / glow */}
               <div className="absolute inset-0 -z-10 scale-110 rounded-full bg-gradient-to-tr from-accent/30 to-transparent blur-2xl" />
               <div className="absolute inset-0 -z-10 rounded-[2rem] border border-accent/20" />
 
-              {/* Foto */}
               <div className="animate-float-sm relative h-64 w-64 overflow-hidden rounded-[2rem] border border-border bg-surface shadow-2xl sm:h-80 sm:w-80">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -135,7 +121,6 @@ export function Hero({
                 />
               </div>
 
-              {/* Suzuvchi mono badge */}
               <div className="glass absolute -bottom-4 -left-4 rounded-xl border border-border px-4 py-2 font-mono text-sm shadow-lg">
                 <span className="text-accent">&lt;/&gt;</span> {t("role")}
               </div>

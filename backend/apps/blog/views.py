@@ -11,18 +11,15 @@ from .serializers import (
     TagSerializer,
 )
 
-
 class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     lookup_field = "slug"
 
-
 class TagViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
     lookup_field = "slug"
-
 
 class BlogPostViewSet(viewsets.ReadOnlyModelViewSet):
     """Faqat chop etilgan maqolalar. Slug bo'yicha qidiriladi."""
@@ -46,7 +43,6 @@ class BlogPostViewSet(viewsets.ReadOnlyModelViewSet):
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
-        # Ko'rishlar sonini oshirish (poyga holatisiz)
         BlogPost.objects.filter(pk=instance.pk).update(views_count=F("views_count") + 1)
         instance.refresh_from_db(fields=["views_count"])
         serializer = self.get_serializer(instance)

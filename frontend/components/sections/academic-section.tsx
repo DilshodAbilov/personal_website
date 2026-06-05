@@ -18,7 +18,6 @@ import { getAcademicWorks } from "@/lib/api";
 
 type IconType = ComponentType<{ className?: string }>;
 
-// Har bir ish turi uchun ikonka
 const TYPE_ICON: Record<string, IconType> = {
   thesis: BookOpen,
   course: GraduationCap,
@@ -74,7 +73,6 @@ export async function AcademicSection() {
                 key={w.id}
                 className="group glass-panel grid grid-cols-1 overflow-hidden rounded-2xl transition-all hover:border-accent/50 hover:glow sm:grid-cols-[220px_1fr]"
               >
-                {/* Vizual: sertifikat rasmi yoki ikonka */}
                 <a
                   href={cover || undefined}
                   target={cover ? "_blank" : undefined}
@@ -92,14 +90,12 @@ export async function AcademicSection() {
                     <Icon className="h-12 w-12 text-accent/30" />
                   )}
 
-                  {/* Tur belgisi rasm ustida */}
                   <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-border bg-background/85 px-2.5 py-1 font-mono text-[11px] text-accent backdrop-blur">
                     <Icon className="h-3 w-3" />
                     {t(`types.${w.work_type}`)}
                   </span>
                 </a>
 
-                {/* Kontent */}
                 <div className="flex flex-col p-5 sm:p-6">
                   <div className="flex items-center gap-3 font-mono text-xs text-muted">
                     <span className="inline-flex items-center gap-1">
@@ -137,7 +133,6 @@ export async function AcademicSection() {
                     </div>
                   )}
 
-                  {/* Havolalar */}
                   <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-border pt-4">
                     {w.doi && <LinkChip href={w.doi} label="DOI" />}
                     {w.source_url && (

@@ -2,14 +2,12 @@ from django.contrib import admin
 
 from .models import ContactMessage, SocialLink
 
-
 @admin.register(SocialLink)
 class SocialLinkAdmin(admin.ModelAdmin):
     list_display = ("platform", "label", "url", "is_active", "order")
     list_filter = ("platform", "is_active")
     search_fields = ("label", "url")
     list_editable = ("is_active", "order")
-
 
 @admin.register(ContactMessage)
 class ContactMessageAdmin(admin.ModelAdmin):
@@ -21,5 +19,4 @@ class ContactMessageAdmin(admin.ModelAdmin):
     date_hierarchy = "created_at"
 
     def has_add_permission(self, request):
-        # Xabarlar faqat formadan keladi, qo'lda qo'shilmaydi
         return False

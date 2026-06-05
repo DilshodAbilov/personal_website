@@ -29,7 +29,6 @@ EXPERIENCES = [
     },
 ]
 
-
 class Command(BaseCommand):
     help = "Ish tajribasini bazaga yuklaydi"
 

@@ -12,7 +12,6 @@ import {
 
 type IconType = ComponentType<{ className?: string }>;
 
-// Platforma kodi -> ikonka
 const ICONS: Record<string, IconType> = {
   github: GithubIcon,
   linkedin: LinkedinIcon,

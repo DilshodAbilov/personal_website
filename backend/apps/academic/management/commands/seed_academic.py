@@ -89,7 +89,6 @@ WORKS = [
     },
 ]
 
-
 class Command(BaseCommand):
     help = "Ilmiy ishlarni (maqola, tezis, DGU) bazaga yuklaydi"
 

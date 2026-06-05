@@ -4,10 +4,6 @@ import { useTranslations } from "next-intl";
 import { socialIcon } from "@/components/social-links";
 import type { SocialLink } from "@/lib/types";
 
-/**
- * Chap tomonda vertikal joylashgan ijtimoiy tarmoq paneli (keng ekranlar).
- * v2 dizaynidagi side-rail — asosiy saytda ham ishlatiladi.
- */
 export function SideRail({ socials }: { socials: SocialLink[] }) {
   const t = useTranslations("Hero");
   if (socials.length === 0) return null;

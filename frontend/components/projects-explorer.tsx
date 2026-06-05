@@ -36,7 +36,6 @@ export function ProjectsExplorer({ projects }: { projects: Project[] }) {
 
   return (
     <div>
-      {/* Tur filtri */}
       <div className="flex flex-wrap gap-2">
         <Chip label={t("all")} active={type === "all"} onClick={() => setType("all")} />
         {availableTypes.map((tp) => (
@@ -49,7 +48,6 @@ export function ProjectsExplorer({ projects }: { projects: Project[] }) {
         ))}
       </div>
 
-      {/* Texnologiya filtri */}
       {allTech.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-1.5">
           {allTech.map((tch) => (
@@ -70,7 +68,6 @@ export function ProjectsExplorer({ projects }: { projects: Project[] }) {
         </div>
       )}
 
-      {/* Natijalar */}
       {filtered.length > 0 ? (
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((p) => (

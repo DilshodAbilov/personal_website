@@ -15,7 +15,6 @@ export async function AboutSection({
   const values = t.raw("values") as string[];
   void locale;
 
-  // Ish tajribasi (bazadan birinchisi — UZINFOCOM), bo'lmasa standart
   const exp = experience[0];
   const expPosition = exp?.position ?? "Backend Developer";
   const expPeriod = exp
@@ -32,9 +31,7 @@ export async function AboutSection({
         {t("intro")}
       </p>
 
-      {/* O'qish va ish joyi kartalari */}
       <div className="mt-12 grid gap-6 lg:grid-cols-2">
-        {/* TA'LIM — TATU */}
         <PlaceCard
           eyebrow={t("educationTitle")}
           icon={<GraduationCap className="h-3.5 w-3.5 text-accent" />}
@@ -44,7 +41,6 @@ export async function AboutSection({
           org="Toshkent Axborot Texnologiyalari Universiteti (TATU)"
         />
 
-        {/* ISH — UZINFOCOM */}
         <PlaceCard
           eyebrow={t("experienceTitle")}
           icon={<Briefcase className="h-3.5 w-3.5 text-accent" />}
@@ -56,7 +52,6 @@ export async function AboutSection({
         />
       </div>
 
-      {/* Tamoyillar */}
       <div className="mt-16">
         <h3 className="text-xl font-semibold">{t("valuesTitle")}</h3>
         <div className="mt-6 grid gap-3 sm:grid-cols-2">

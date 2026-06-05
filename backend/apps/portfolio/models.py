@@ -3,7 +3,6 @@ from django.db import models
 
 from apps.common.models import TimeStampedModel
 
-
 class Project(TimeStampedModel):
     """Portfolio loyihasi."""
 
@@ -52,7 +51,6 @@ class Project(TimeStampedModel):
 
     def __str__(self) -> str:
         return self.name
-
 
 class ProjectImage(models.Model):
     """Loyiha skrinshoti / rasmi."""

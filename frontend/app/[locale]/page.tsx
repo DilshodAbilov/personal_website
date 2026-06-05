@@ -34,7 +34,6 @@ export default async function HomePage({
 
   const tStats = await getTranslations("Stats");
 
-  // Tajriba yillari (eng erta ish boshlanishidan)
   const earliest = experience
     .map((e) => new Date(e.start_date).getFullYear())
     .sort((a, b) => a - b)[0];
@@ -51,16 +50,13 @@ export default async function HomePage({
 
   return (
     <>
-      {/* Bosh ekran */}
       <Hero socials={socials} avatar={profile?.avatar} />
       <TechMarquee items={techNames} />
 
-      {/* Statistika */}
       <Section className="scroll-mt-20">
         <Stats items={stats} />
       </Section>
 
-      {/* Bo'limlar — bitta sahifada, scroll bilan */}
       <AboutSection experience={experience} locale={locale} />
       <SkillsSection skills={skills} />
       <ProjectsSection projects={projects} />

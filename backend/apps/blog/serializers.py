@@ -2,18 +2,15 @@ from rest_framework import serializers
 
 from .models import BlogPost, Category, Tag
 
-
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = ["id", "name_uz", "name_en", "name_ru", "slug"]
 
-
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tag
         fields = ["id", "name", "slug"]
-
 
 class BlogPostListSerializer(serializers.ModelSerializer):
     """Ro'yxat uchun — kontentsiz (yengil)."""
@@ -28,7 +25,6 @@ class BlogPostListSerializer(serializers.ModelSerializer):
             "cover_image", "category", "tags", "language",
             "read_time", "views_count", "published_at", "created_at",
         ]
-
 
 class BlogPostDetailSerializer(serializers.ModelSerializer):
     """To'liq maqola — kontent bilan."""

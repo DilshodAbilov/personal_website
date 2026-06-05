@@ -1,6 +1,5 @@
 import type { CSSProperties } from "react";
 
-// Harflar ustidan "sochilib" turadigan zarrachalar (fiksilangan joylashuv + kechikish)
 const PARTICLES = [
   { l: 4, d: 0, x: -3 },
   { l: 14, d: 0.7, x: 2 },
@@ -23,7 +22,6 @@ export function BrandLogo({
 }) {
   return (
     <span className={`flex items-center gap-2.5 ${className}`}>
-      {/* Logo rasm */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/img_1.png"
@@ -31,7 +29,6 @@ export function BrandLogo({
         className="animate-float-sm h-9 w-9 shrink-0 rounded-lg object-cover ring-1 ring-border"
       />
 
-      {/* Ism + zarracha animatsiyasi */}
       <span className="relative inline-block font-mono text-lg font-bold tracking-tight">
         <span className="text-gradient">Dilshod Abilov</span>
 

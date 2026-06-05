@@ -56,7 +56,6 @@ export default async function ResumePage({
 
   return (
     <div className="bg-zinc-100 py-8 print:bg-white print:py-0">
-      {/* Asboblar paneli — chop etishda yashirin */}
       <div className="mx-auto mb-6 flex max-w-[820px] items-center justify-between px-4 print:hidden">
         <Link
           href="/"
@@ -67,9 +66,7 @@ export default async function ResumePage({
         <PrintButton label={t("download")} />
       </div>
 
-      {/* CV qog'ozi */}
       <article className="mx-auto max-w-[820px] bg-white px-10 py-10 text-zinc-800 shadow-xl print:max-w-none print:px-7 print:py-1 print:text-[13px] print:shadow-none print:[zoom:0.85]">
-        {/* Sarlavha */}
         <header className="flex items-center gap-6 border-b border-zinc-200 pb-6 print:gap-4 print:pb-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -98,12 +95,10 @@ export default async function ResumePage({
           </div>
         </header>
 
-        {/* Qisqacha */}
         <Block title={t("summaryTitle")}>
           <p className="text-sm leading-relaxed text-zinc-700">{t("summary")}</p>
         </Block>
 
-        {/* Ish tajribasi */}
         {experience.length > 0 && (
           <Block title={t("experienceTitle")}>
             {experience.map((e) => (
@@ -131,7 +126,6 @@ export default async function ResumePage({
           </Block>
         )}
 
-        {/* Loyihalar */}
         {projects.length > 0 && (
           <Block title={t("projectsTitle")}>
             {projects.map((p) => (
@@ -150,7 +144,6 @@ export default async function ResumePage({
           </Block>
         )}
 
-        {/* Ta'lim */}
         <Block title={t("educationTitle")}>
           <div className="flex items-baseline justify-between gap-3">
             <h3 className="font-semibold text-zinc-900">
@@ -165,7 +158,6 @@ export default async function ResumePage({
           </div>
         </Block>
 
-        {/* Ko'nikmalar */}
         {grouped.length > 0 && (
           <Block title={t("skillsTitle")}>
             <div className="space-y-1.5">
@@ -183,7 +175,6 @@ export default async function ResumePage({
           </Block>
         )}
 
-        {/* Tillar */}
         <Block title={t("languagesTitle")}>
           <div className="flex flex-wrap gap-x-8 gap-y-1 text-sm">
             {languages.map((l) => (
@@ -195,7 +186,6 @@ export default async function ResumePage({
           </div>
         </Block>
 
-        {/* Sertifikatlar va nashrlar */}
         {academic.length > 0 && (
           <Block title={t("certificationsTitle")}>
             <ul className="space-y-1.5 print:space-y-0.5">

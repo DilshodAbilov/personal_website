@@ -11,7 +11,6 @@ export function SkillsGrid({ skills }: { skills: Skill[] }) {
   const t = useTranslations("Skills");
   const [active, setActive] = useState<string>("all");
 
-  // Faqat mavjud kategoriyalarni ko'rsatish
   const available = useMemo(
     () => CATEGORIES.filter((c) => skills.some((s) => s.category === c)),
     [skills],
@@ -28,7 +27,6 @@ export function SkillsGrid({ skills }: { skills: Skill[] }) {
 
   return (
     <div>
-      {/* Filter tugmalari */}
       <div className="flex flex-wrap gap-2">
         <FilterButton
           label={t("all")}
@@ -45,7 +43,6 @@ export function SkillsGrid({ skills }: { skills: Skill[] }) {
         ))}
       </div>
 
-      {/* Kartalar */}
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((skill) => (
           <div

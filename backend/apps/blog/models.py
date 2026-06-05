@@ -2,7 +2,6 @@ from django.db import models
 
 from apps.common.models import Language, TimeStampedModel
 
-
 class Category(models.Model):
     """Blog kategoriyasi (ko'p tilli nom)."""
 
@@ -19,7 +18,6 @@ class Category(models.Model):
     def __str__(self) -> str:
         return self.name_uz or self.name_en or self.slug
 
-
 class Tag(models.Model):
     """Blog tegi."""
 
@@ -34,7 +32,6 @@ class Tag(models.Model):
     def __str__(self) -> str:
         return self.name
 
-
 class BlogPost(TimeStampedModel):
     """Blog maqolasi (UZ / EN / RU kontent)."""
 
@@ -42,12 +39,10 @@ class BlogPost(TimeStampedModel):
         DRAFT = "draft", "Qoralama"
         PUBLISHED = "published", "Chop etilgan"
 
-    # Sarlavhalar
     title_uz = models.CharField("Sarlavha (UZ)", max_length=255)
     title_en = models.CharField("Sarlavha (EN)", max_length=255, blank=True)
     title_ru = models.CharField("Sarlavha (RU)", max_length=255, blank=True)
 
-    # Kontent (Markdown / MDX)
     content_uz = models.TextField("Kontent (UZ)", blank=True)
     content_en = models.TextField("Kontent (EN)", blank=True)
     content_ru = models.TextField("Kontent (RU)", blank=True)
@@ -85,12 +80,4 @@ class BlogPost(TimeStampedModel):
 
     def __str__(self) -> str:
         return self.title_uz or self.title_en or self.slug
-
-# class Post(TimeStampedModel):
-#     title_ru = models.CharField("Kontent (RU)", max_length=255)
-#     title_en = models.CharField("Kontent (EN)", max_negth=255)
-#     title_en = models.CharField("Kontent (UZ)", max_length=255)
-#     author = models.CharField("Kontent (UZ)", max_length=255)
-#     slug = models.CharField("Sarlavha (UZ)", max_length=255)
-#     slug_en  models>CharField
 

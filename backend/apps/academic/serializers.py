@@ -2,7 +2,6 @@ from rest_framework import serializers
 
 from .models import AcademicWork
 
-
 class AcademicWorkSerializer(serializers.ModelSerializer):
     work_type_display = serializers.CharField(source="get_work_type_display", read_only=True)
 

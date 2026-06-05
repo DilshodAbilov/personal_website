@@ -6,9 +6,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = env_list("DJANGO_ALLOWED_HOSTS", "")
 
-# ============================================================
-# Redis cache
-# ============================================================
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.redis.RedisCache",
@@ -16,9 +13,6 @@ CACHES = {
     }
 }
 
-# ============================================================
-# Xavfsizlik (HTTPS orqasida)
-# ============================================================
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
@@ -29,9 +23,6 @@ SECURE_HSTS_PRELOAD = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = "DENY"
 
-# ============================================================
-# Email (SMTP)
-# ============================================================
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = env("EMAIL_HOST", "")
 EMAIL_PORT = int(env("EMAIL_PORT", "587"))
@@ -39,9 +30,6 @@ EMAIL_HOST_USER = env("EMAIL_HOST_USER", "")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", "")
 EMAIL_USE_TLS = True
 
-# ============================================================
-# MinIO (S3-compatible) media storage
-# ============================================================
 STORAGES = {
     "default": {
         "BACKEND": "storages.backends.s3.S3Storage",

@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class SocialLink(models.Model):
     """Ijtimoiy tarmoq / aloqa havolasi (footer va aloqa bo'limida ko'rsatiladi)."""
 
@@ -31,7 +30,6 @@ class SocialLink(models.Model):
 
     def __str__(self) -> str:
         return f"{self.get_platform_display()} — {self.url}"
-
 
 class ContactMessage(models.Model):
     """Aloqa formasidan kelgan xabar."""

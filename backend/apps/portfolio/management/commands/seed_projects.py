@@ -106,7 +106,6 @@ PROJECTS = [
     },
 ]
 
-
 class Command(BaseCommand):
     help = "Portfolio loyihalarini bazaga yuklaydi"
 

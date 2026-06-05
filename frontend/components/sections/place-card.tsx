@@ -4,7 +4,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
 import { ArrowLeftRight } from "lucide-react";
 
-// Shatter to'ri (ustun × qator) — juda mayda zarrachalar
 const COLS = 24;
 const ROWS = 14;
 
@@ -55,7 +54,6 @@ export function PlaceCard({
 
       if (el) {
         const { width: W, height: H } = el.getBoundingClientRect();
-        // Bo'laklar pastki-o'ng tomondagi kichik rasm tomon uchadi
         const targetX = W * 0.92;
         const targetY = H * 1.18;
         const tiles: Tile[] = [];
@@ -89,7 +87,6 @@ export function PlaceCard({
     [images],
   );
 
-  // Har 3 sekundda avtomatik almashinuv
   useEffect(() => {
     if (images.length < 2) return;
     const id = setInterval(() => {
@@ -100,7 +97,6 @@ export function PlaceCard({
 
   return (
     <div className="group relative flex h-[420px] flex-col overflow-hidden rounded-2xl border border-border bg-background-alt transition-all hover:border-accent/50 hover:glow">
-      {/* Rasm — kartaning ~75% qismi */}
       <div ref={bigRef} className="relative h-[75%] w-full overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -111,13 +107,11 @@ export function PlaceCard({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background-alt via-transparent to-transparent" />
 
-        {/* Eyebrow chip */}
         <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-background/70 px-3 py-1 text-xs font-medium backdrop-blur">
           {icon}
           {eyebrow}
         </div>
 
-        {/* Logo */}
         {logo && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -128,7 +122,6 @@ export function PlaceCard({
         )}
       </div>
 
-      {/* Yozuvlar + almashtiriladigan kichik rasm(lar) */}
       <div className="flex h-[25%] items-center gap-3 px-4">
         <div className="min-w-0 flex-1">
           <div className="font-mono text-[11px] text-accent">{period}</div>
@@ -163,7 +156,6 @@ export function PlaceCard({
         </div>
       </div>
 
-      {/* Shatter overlay — eski rasm bo'laklari uchib ketadi */}
       {shards && (
         <div
           className="pointer-events-none absolute left-0 top-0 z-20 h-[75%] w-full"

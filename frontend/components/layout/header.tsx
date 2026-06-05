@@ -8,7 +8,6 @@ import { LocaleSwitcher } from "@/components/locale-switcher";
 import { BrandShowcase } from "@/components/layout/brand-showcase";
 import { cn } from "@/lib/utils";
 
-// Bitta sahifadagi bo'limlar (anchor scroll)
 const NAV = [
   { id: "home", key: "home" },
   { id: "about", key: "about" },
@@ -23,7 +22,6 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<string>("home");
 
-  // Scrollspy — qaysi bo'lim ko'rinib turganini aniqlash
   useEffect(() => {
     const sections = NAV.map((n) => document.getElementById(n.id)).filter(
       (el): el is HTMLElement => el !== null,
@@ -52,10 +50,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border glass print:hidden">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        {/* Logo */}
         <BrandShowcase />
 
-        {/* Desktop nav */}
         <nav className="hidden items-center gap-1 md:flex">
           {NAV.map((item) => (
             <a
@@ -88,7 +84,6 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile nav */}
       {open && (
         <nav className="border-t border-border bg-background-alt px-4 py-3 md:hidden">
           {NAV.map((item) => (

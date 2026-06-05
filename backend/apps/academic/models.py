@@ -3,7 +3,6 @@ from django.db import models
 
 from apps.common.models import Language, TimeStampedModel
 
-
 class AcademicWork(TimeStampedModel):
     """Ilmiy ish (tezis, kurs ishi, DGU, maqola, konferensiya)."""
 
@@ -40,12 +39,10 @@ class AcademicWork(TimeStampedModel):
     file = models.FileField("Fayl (PDF)", upload_to="academic/", blank=True, null=True)
     is_full_text_public = models.BooleanField("To'liq matn ochiq", default=False)
 
-    # Tashqi havolalar
     source_url = models.URLField("Nashr / manba havolasi", blank=True)
     doi = models.URLField("DOI havolasi", blank=True)
     openaire_url = models.URLField("OpenAIRE havolasi", blank=True)
 
-    # Sertifikat / diplom rasmlari (statik yo'l yoki URL, masalan /img_9.png)
     certificate_url = models.CharField("Sertifikat rasmi", max_length=300, blank=True)
     diploma_url = models.CharField("Diplom rasmi", max_length=300, blank=True)
 

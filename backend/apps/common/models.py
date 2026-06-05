@@ -1,14 +1,12 @@
 """Barcha ilovalar uchun umumiy abstract modellar va tanlovlar."""
 from django.db import models
 
-
 class Language(models.TextChoices):
     """Kontent tillari (UZ / EN / RU)."""
 
     UZ = "uz", "O'zbekcha"
     EN = "en", "English"
     RU = "ru", "Русский"
-
 
 class TimeStampedModel(models.Model):
     """Yaratilgan va yangilangan vaqtni avtomatik saqlovchi abstract model."""
@@ -19,7 +17,6 @@ class TimeStampedModel(models.Model):
     class Meta:
         abstract = True
         ordering = ["-created_at"]
-
 
 class SiteProfile(models.Model):
     """Sayt profili (yagona yozuv) — asosiy sahifa fotosi admin'dan boshqariladi."""

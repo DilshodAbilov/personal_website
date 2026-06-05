@@ -2,7 +2,6 @@ from rest_framework import serializers
 
 from .models import Experience
 
-
 class ExperienceSerializer(serializers.ModelSerializer):
     is_current = serializers.BooleanField(read_only=True)
 

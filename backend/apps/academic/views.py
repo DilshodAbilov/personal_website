@@ -6,7 +6,6 @@ from .filters import AcademicWorkFilter
 from .models import AcademicWork
 from .serializers import AcademicWorkSerializer
 
-
 class AcademicWorkViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = AcademicWork.objects.all()
     serializer_class = AcademicWorkSerializer

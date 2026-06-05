@@ -1,6 +1,5 @@
 import type { CSSProperties } from "react";
 
-// Katta ism ustidan sochiluvchi (parchalanuvchi) zarrachalar — showcase bilan bir xil
 const PARTICLES = [
   { l: 2, t: 70, d: 0, x: -6 },
   { l: 10, t: 30, d: 0.8, x: 4 },

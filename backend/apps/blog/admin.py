@@ -2,20 +2,17 @@ from django.contrib import admin
 
 from .models import BlogPost, Category, Tag
 
-
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ("name_uz", "name_en", "slug")
     search_fields = ("name_uz", "name_en", "name_ru")
     prepopulated_fields = {"slug": ("name_uz",)}
 
-
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
     list_display = ("name", "slug")
     search_fields = ("name",)
     prepopulated_fields = {"slug": ("name",)}
-
 
 @admin.register(BlogPost)
 class BlogPostAdmin(admin.ModelAdmin):
