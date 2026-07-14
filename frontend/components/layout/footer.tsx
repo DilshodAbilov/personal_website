@@ -22,7 +22,6 @@ export function Footer({ socials }: { socials: SocialLink[] }) {
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="max-w-xs">
             <BrandLogo />
-            <p className="mt-3 text-sm text-muted">{t("tagline")}</p>
           </div>
 
           <nav className="flex flex-col gap-2">

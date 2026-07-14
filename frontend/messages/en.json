@@ -126,21 +126,61 @@
     "back": "Back to site",
     "role": "Backend Developer",
     "location": "Tashkent, Uzbekistan",
+    "linkedin": "linkedin.com/in/dilshod-abilov",
+    "linkedinUrl": "https://www.linkedin.com/in/dilshod-abilov",
+    "github": "github.com/DilshodAbilov",
+    "githubUrl": "https://github.com/DilshodAbilov",
     "summaryTitle": "Summary",
-    "summary": "Backend developer studying Software Engineering at Tashkent University of Information Technologies. I build reliable, scalable backend systems, REST APIs and integrations with Python and Django. Currently working on government projects at UZINFOCOM. Passionate about AI and DevOps, always learning.",
+    "summary": "Backend developer specializing in Python, Django and FastAPI. Currently building national digital-transformation systems at UZINFOCOM — creating REST APIs and managing asynchronous processes with Celery and Redis. A Software Engineering student at TATU with hands-on experience in nationwide projects (Chamber of Accounts, eMehmon). Interested in AI/ML and DevOps, always learning.",
     "experienceTitle": "Experience",
+    "experience": [
+      {
+        "position": "Backend Developer",
+        "period": "January 2026 – Present",
+        "company": "UZINFOCOM LLC (Unified Integrator)",
+        "meta": "Digital Transformation Department of Law Enforcement Agencies, Tashkent",
+        "bullets": [
+          "Developing and maintaining backend systems for government web projects: building REST APIs, handling asynchronous tasks and queues with Celery and Redis, database architecture and integrations (Python, Django, Django REST Framework, PostgreSQL).",
+          "Contributed to the backend of the Chamber of Accounts of the Republic of Uzbekistan project — a state financial-control system.",
+          "Built part of the Imam al-Bukhari (eMehmon) project and gained substantial experience with large production systems.",
+          "Additionally (secondary): containerizing, deploying and monitoring services with Docker, Kubernetes, Nginx, Prometheus, Grafana and Loki."
+        ]
+      }
+    ],
     "projectsTitle": "Projects",
+    "projectsIntro": "Personal projects built for self-study before joining UZINFOCOM.",
+    "projects": [
+      { "name": "Git Report", "description": "An AI-powered commit analyzer: reads GitLab/GitHub diffs and uses an LLM to compile a work report for each developer.", "tech": "Python · LLM · GitLab API" },
+      { "name": "Voice AI Agent", "description": "A real-time AI agent that understands speech and responds with voice.", "tech": "Python · AI/LLM · Speech-to-Text" },
+      { "name": "Bellissimo Bot", "description": "A Bellissimo-style Telegram bot — food ordering, menu, cart and admin management.", "tech": "Python · Aiogram · PostgreSQL" },
+      { "name": "Education Platform", "description": "A web platform for managing courses, lessons and students.", "tech": "Python · Django · PostgreSQL · HTML/CSS" }
+    ],
     "educationTitle": "Education",
-    "educationDegree": "Software Engineering",
-    "educationSchool": "Tashkent University of Information Technologies (TATU)",
-    "skillsTitle": "Skills",
+    "educationDegree": "Software Engineering (Bachelor's)",
+    "educationPeriod": "2024 – Present (expected 2028)",
+    "educationSchool": "Tashkent University of Information Technologies (TATU), Faculty of Software Engineering",
+    "skillsTitle": "Technical Skills",
+    "skills": [
+      { "label": "Programming languages", "items": "Python, C++, SQL" },
+      { "label": "Backend", "items": "Django, Django REST Framework, FastAPI, Flask, Celery, REST API" },
+      { "label": "Databases", "items": "PostgreSQL, MySQL, SQL Server, Redis" },
+      { "label": "DevOps", "items": "Docker, Kubernetes, Nginx, Prometheus, Grafana, Loki" },
+      { "label": "Tools", "items": "Git, Jira, Trello, PowerShell, Figma, Photoshop, Canva" }
+    ],
+    "certificationsTitle": "Certifications",
+    "certifications": [
+      "Advanced Django: Mastering Django and Django REST Framework Specialization — Coursera",
+      "Advanced Django: Introduction to Django Rest Framework — Coursera",
+      "Google Data Analytics Professional Certificate — Coursera",
+      "Google IT Support Professional Certificate — Coursera",
+      "Google Cybersecurity Professional Certificate — Coursera"
+    ],
     "languagesTitle": "Languages",
     "languages": [
       { "name": "Uzbek", "level": "Native" },
-      { "name": "Russian", "level": "Good" },
-      { "name": "English", "level": "Intermediate" }
+      { "name": "Russian", "level": "Proficient" },
+      { "name": "English", "level": "Intermediate (actively improving)" }
     ],
-    "certificationsTitle": "Certifications & Publications",
     "present": "Present"
   },
   "Footer": {

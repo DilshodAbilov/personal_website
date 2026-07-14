@@ -124,23 +124,63 @@
   "Resume": {
     "download": "Скачать PDF",
     "back": "На сайт",
-    "role": "Backend Developer",
+    "role": "Backend-разработчик",
     "location": "Ташкент, Узбекистан",
+    "linkedin": "linkedin.com/in/dilshod-abilov",
+    "linkedinUrl": "https://www.linkedin.com/in/dilshod-abilov",
+    "github": "github.com/DilshodAbilov",
+    "githubUrl": "https://github.com/DilshodAbilov",
     "summaryTitle": "О себе",
-    "summary": "Backend-разработчик, обучаюсь по направлению «Программная инженерия» в Ташкентском университете информационных технологий. Создаю надёжные масштабируемые backend-системы, REST API и интеграции на Python и Django. Работаю над государственными проектами в UZINFOCOM. Интересуюсь ИИ и DevOps, постоянно учусь.",
+    "summary": "Backend-разработчик, специализирующийся на Python, Django и FastAPI. В настоящее время в UZINFOCOM разрабатывает государственные системы цифровой трансформации: создание REST API, управление асинхронными процессами на базе Celery и Redis. Студент направления «Программная инженерия» ТУИТ, имеет практический опыт в проектах национального масштаба (Счётная палата, eMehmon). Интересуется направлениями AI/ML и DevOps, постоянно учится.",
     "experienceTitle": "Опыт работы",
+    "experience": [
+      {
+        "position": "Backend-разработчик",
+        "period": "Январь 2026 — настоящее время",
+        "company": "ООО «UZINFOCOM» (Единый интегратор)",
+        "meta": "Управление цифровой трансформации правоохранительных органов, Ташкент",
+        "bullets": [
+          "Разработка и поддержка backend-систем для государственных веб-проектов: создание REST API, управление асинхронными задачами и очередями с помощью Celery и Redis, архитектура баз данных и интеграции (Python, Django, Django REST Framework, PostgreSQL).",
+          "Участвовал в разработке backend-части проекта Счётной палаты Республики Узбекистан — государственной системы финансового контроля.",
+          "Разработал часть проекта Имам аль-Бухари (eMehmon) и получил большой опыт работы с крупными производственными системами.",
+          "Дополнительно (второстепенно): контейнеризация, развёртывание и мониторинг сервисов с помощью Docker, Kubernetes, Nginx, Prometheus, Grafana и Loki."
+        ]
+      }
+    ],
     "projectsTitle": "Проекты",
+    "projectsIntro": "Личные проекты, выполненные для самостоятельного обучения до трудоустройства в UZINFOCOM.",
+    "projects": [
+      { "name": "Git Report", "description": "AI-анализатор коммитов: читает diff'ы GitLab/GitHub и с помощью LLM составляет отчёт о работе каждого разработчика.", "tech": "Python · LLM · GitLab API" },
+      { "name": "Voice AI Agent", "description": "AI-агент, который в реальном времени понимает речь и отвечает голосом.", "tech": "Python · AI/LLM · Speech-to-Text" },
+      { "name": "Bellissimo Bot", "description": "Telegram-бот в стиле Bellissimo — заказ еды, меню, корзина и админ-панель.", "tech": "Python · Aiogram · PostgreSQL" },
+      { "name": "Education Platform", "description": "Веб-платформа для управления курсами, уроками и учениками.", "tech": "Python · Django · PostgreSQL · HTML/CSS" }
+    ],
     "educationTitle": "Образование",
-    "educationDegree": "Программная инженерия",
-    "educationSchool": "Ташкентский университет информационных технологий (TATU)",
-    "skillsTitle": "Навыки",
+    "educationDegree": "Программная инженерия (бакалавр)",
+    "educationPeriod": "2024 — настоящее время (ожидается в 2028)",
+    "educationSchool": "Ташкентский университет информационных технологий (ТУИТ), факультет программной инженерии",
+    "skillsTitle": "Технические навыки",
+    "skills": [
+      { "label": "Языки программирования", "items": "Python, C++, SQL" },
+      { "label": "Backend", "items": "Django, Django REST Framework, FastAPI, Flask, Celery, REST API" },
+      { "label": "Базы данных", "items": "PostgreSQL, MySQL, SQL Server, Redis" },
+      { "label": "DevOps", "items": "Docker, Kubernetes, Nginx, Prometheus, Grafana, Loki" },
+      { "label": "Инструменты", "items": "Git, Jira, Trello, PowerShell, Figma, Photoshop, Canva" }
+    ],
+    "certificationsTitle": "Сертификаты",
+    "certifications": [
+      "Advanced Django: Mastering Django and Django REST Framework Specialization — Coursera",
+      "Advanced Django: Introduction to Django Rest Framework — Coursera",
+      "Google Data Analytics Professional Certificate — Coursera",
+      "Google IT Support Professional Certificate — Coursera",
+      "Google Cybersecurity Professional Certificate — Coursera"
+    ],
     "languagesTitle": "Языки",
     "languages": [
       { "name": "Узбекский", "level": "Родной" },
-      { "name": "Русский", "level": "Хорошо" },
-      { "name": "Английский", "level": "Средний" }
+      { "name": "Русский", "level": "Хороший" },
+      { "name": "Английский", "level": "Средний (активно изучаю)" }
     ],
-    "certificationsTitle": "Сертификаты и публикации",
     "present": "наст. время"
   },
   "Footer": {

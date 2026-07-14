@@ -2,30 +2,22 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { PrintButton } from "@/components/resume/print-button";
-import { localized } from "@/lib/utils";
-import {
-  getAcademicWorks,
-  getExperience,
-  getFeaturedProjects,
-  getSkills,
-} from "@/lib/api";
+import { GithubIcon, LinkedinIcon } from "@/components/icons";
 
 const EMAIL = "abilovdilshod55@gmail.com";
 const PHONE = "+998 20 000 35 01";
-const FULL_NAME = "Dilshod Abilov Bekzod o'g'li";
+const FULL_NAME = "Dilshod Abilov";
 
-const SKILL_CATEGORIES = [
-  "backend",
-  "database",
-  "devops",
-  "tools",
-  "design",
-  "other",
-] as const;
-
-function year(d: string) {
-  return new Date(d).getFullYear();
-}
+type Experience = {
+  position: string;
+  period: string;
+  company: string;
+  meta: string;
+  bullets: string[];
+};
+type Project = { name: string; description: string; tech: string };
+type SkillGroup = { label: string; items: string };
+type Language = { name: string; level: string };
 
 export default async function ResumePage({
   params,
@@ -36,21 +28,12 @@ export default async function ResumePage({
   setRequestLocale(locale);
 
   const t = await getTranslations("Resume");
-  const tSkills = await getTranslations("Skills");
-  const tAcademic = await getTranslations("Academic");
 
-  const [skills, experience, projects, academic] = await Promise.all([
-    getSkills(),
-    getExperience(),
-    getFeaturedProjects(),
-    getAcademicWorks(),
-  ]);
-
-  const languages = t.raw("languages") as { name: string; level: string }[];
-  const grouped = SKILL_CATEGORIES.map((cat) => ({
-    cat,
-    items: skills.filter((s) => s.category === cat),
-  })).filter((g) => g.items.length > 0);
+  const experience = t.raw("experience") as Experience[];
+  const projects = t.raw("projects") as Project[];
+  const skills = t.raw("skills") as SkillGroup[];
+  const certifications = t.raw("certifications") as string[];
+  const languages = t.raw("languages") as Language[];
 
   return (
     <div className="bg-zinc-100 py-8 print:bg-white print:py-0">
@@ -83,12 +66,31 @@ export default async function ResumePage({
               <span className="inline-flex items-center gap-1.5">
                 <Phone className="h-3.5 w-3.5" /> {PHONE}
               </span>
-              <span className="inline-flex items-center gap-1.5">
+              <a
+                href={`mailto:${EMAIL}`}
+                className="inline-flex items-center gap-1.5 hover:text-blue-700"
+              >
                 <Mail className="h-3.5 w-3.5" /> {EMAIL}
-              </span>
+              </a>
               <span className="inline-flex items-center gap-1.5">
                 <MapPin className="h-3.5 w-3.5" /> {t("location")}
               </span>
+              <a
+                href={t("linkedinUrl")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 hover:text-blue-700"
+              >
+                <LinkedinIcon className="h-3.5 w-3.5" /> {t("linkedin")}
+              </a>
+              <a
+                href={t("githubUrl")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 hover:text-blue-700"
+              >
+                <GithubIcon className="h-3.5 w-3.5" /> {t("github")}
+              </a>
             </div>
           </div>
         </header>
@@ -97,50 +99,46 @@ export default async function ResumePage({
           <p className="text-sm leading-relaxed text-zinc-700">{t("summary")}</p>
         </Block>
 
-        {experience.length > 0 && (
-          <Block title={t("experienceTitle")}>
-            {experience.map((e) => (
-              <div key={e.id} className="mb-4 last:mb-0 print:mb-2">
-                <div className="flex items-baseline justify-between gap-3">
-                  <h3 className="font-semibold text-zinc-900">{e.position}</h3>
-                  <span className="shrink-0 text-xs text-zinc-500">
-                    {year(e.start_date)} –{" "}
-                    {e.end_date ? year(e.end_date) : t("present")}
-                  </span>
-                </div>
-                <div className="text-sm font-medium text-blue-700">
-                  {e.company}
-                </div>
-                <p className="mt-1 text-sm text-zinc-700">
-                  {localized(e, "description", locale)}
-                </p>
-                {e.technologies.length > 0 && (
-                  <p className="mt-1 text-xs text-zinc-500">
-                    {e.technologies.join(" · ")}
-                  </p>
-                )}
+        <Block title={t("experienceTitle")}>
+          {experience.map((e, i) => (
+            <div key={i} className="mb-4 last:mb-0 print:mb-2">
+              <div className="flex items-baseline justify-between gap-3">
+                <h3 className="font-semibold text-zinc-900">{e.position}</h3>
+                <span className="shrink-0 text-xs text-zinc-500">
+                  {e.period}
+                </span>
               </div>
-            ))}
-          </Block>
-        )}
+              <div className="text-sm font-medium text-blue-700">
+                {e.company}
+              </div>
+              {e.meta && (
+                <div className="text-xs italic text-zinc-500">{e.meta}</div>
+              )}
+              {e.bullets.length > 0 && (
+                <ul className="mt-1.5 list-disc space-y-1 pl-5 text-sm text-zinc-700 print:space-y-0.5">
+                  {e.bullets.map((b, bi) => (
+                    <li key={bi}>{b}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </Block>
 
-        {projects.length > 0 && (
-          <Block title={t("projectsTitle")}>
-            {projects.map((p) => (
-              <div key={p.id} className="mb-3 last:mb-0 print:mb-1.5">
-                <div className="flex items-baseline justify-between gap-3">
-                  <h3 className="font-semibold text-zinc-900">{p.name}</h3>
-                  <span className="shrink-0 text-xs text-zinc-500">
-                    {p.technologies.slice(0, 4).join(" · ")}
-                  </span>
-                </div>
-                <p className="text-sm text-zinc-700">
-                  {localized(p, "description", locale)}
-                </p>
+        <Block title={t("projectsTitle")}>
+          <p className="mb-2 text-xs italic text-zinc-500">
+            {t("projectsIntro")}
+          </p>
+          {projects.map((p, i) => (
+            <div key={i} className="mb-3 last:mb-0 print:mb-1.5">
+              <div className="flex items-baseline justify-between gap-3">
+                <h3 className="font-semibold text-zinc-900">{p.name}</h3>
+                <span className="shrink-0 text-xs text-zinc-500">{p.tech}</span>
               </div>
-            ))}
-          </Block>
-        )}
+              <p className="text-sm text-zinc-700">{p.description}</p>
+            </div>
+          ))}
+        </Block>
 
         <Block title={t("educationTitle")}>
           <div className="flex items-baseline justify-between gap-3">
@@ -148,7 +146,7 @@ export default async function ResumePage({
               {t("educationDegree")}
             </h3>
             <span className="shrink-0 text-xs text-zinc-500">
-              2024 – {t("present")}
+              {t("educationPeriod")}
             </span>
           </div>
           <div className="text-sm font-medium text-blue-700">
@@ -156,22 +154,31 @@ export default async function ResumePage({
           </div>
         </Block>
 
-        {grouped.length > 0 && (
-          <Block title={t("skillsTitle")}>
-            <div className="space-y-1.5">
-              {grouped.map((g) => (
-                <div key={g.cat} className="text-sm">
-                  <span className="font-semibold text-zinc-900">
-                    {tSkills(`categories.${g.cat}`)}:{" "}
-                  </span>
-                  <span className="text-zinc-700">
-                    {g.items.map((s) => s.name).join(", ")}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </Block>
-        )}
+        <Block title={t("skillsTitle")}>
+          <div className="space-y-1.5">
+            {skills.map((g) => (
+              <div key={g.label} className="text-sm">
+                <span className="font-semibold text-zinc-900">
+                  {g.label}:{" "}
+                </span>
+                <span className="text-zinc-700">{g.items}</span>
+              </div>
+            ))}
+          </div>
+        </Block>
+
+        <Block title={t("certificationsTitle")}>
+          <ul className="space-y-1.5 print:space-y-0.5">
+            {certifications.map((c, i) => (
+              <li
+                key={i}
+                className="text-sm leading-snug text-zinc-700 print:text-[11px] print:leading-tight"
+              >
+                {c}
+              </li>
+            ))}
+          </ul>
+        </Block>
 
         <Block title={t("languagesTitle")}>
           <div className="flex flex-wrap gap-x-8 gap-y-1 text-sm">
@@ -183,27 +190,6 @@ export default async function ResumePage({
             ))}
           </div>
         </Block>
-
-        {academic.length > 0 && (
-          <Block title={t("certificationsTitle")}>
-            <ul className="space-y-1.5 print:space-y-0.5">
-              {academic.map((w) => (
-                <li
-                  key={w.id}
-                  className="text-sm leading-snug text-zinc-700 print:text-[11px] print:leading-tight"
-                >
-                  <span className="text-zinc-900">
-                    {localized(w, "title", locale)}
-                  </span>
-                  <span className="text-zinc-500">
-                    {" "}
-                    — {tAcademic(`types.${w.work_type}`)}, {w.year}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </Block>
-        )}
       </article>
     </div>
   );

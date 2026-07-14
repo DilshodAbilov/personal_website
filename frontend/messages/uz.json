@@ -124,23 +124,63 @@
   "Resume": {
     "download": "PDF yuklab olish",
     "back": "Saytga qaytish",
-    "role": "Backend Developer",
+    "role": "Backend Dasturchi",
     "location": "Toshkent, O'zbekiston",
+    "linkedin": "linkedin.com/in/dilshod-abilov",
+    "linkedinUrl": "https://www.linkedin.com/in/dilshod-abilov",
+    "github": "github.com/DilshodAbilov",
+    "githubUrl": "https://github.com/DilshodAbilov",
     "summaryTitle": "Qisqacha",
-    "summary": "Toshkent Axborot Texnologiyalari Universitetida Dasturiy injiniring yo'nalishida tahsil olayotgan backend dasturchi. Python va Django asosida ishonchli, kengaytiriladigan backend tizimlar, REST API va integratsiyalar quraman. UZINFOCOM'da davlat loyihalarida ishlayman. Sun'iy intellekt va DevOps'ga qiziqaman, doimiy o'rganaman.",
+    "summary": "Python, Django va FastAPI bo'yicha ixtisoslashgan backend dasturchi. Hozirda UZINFOCOM'da REST API'lar yaratish, Celery va Redis asosida asinxron jarayonlarni boshqarish orqali davlat raqamli transformatsiya tizimlarini ishlab chiqmoqda. TATU Dasturiy injiniring yo'nalishi talabasi, milliy miqyosdagi loyihalarda (Hisob palatasi, eMehmon) amaliy tajribaga ega. AI/ML va DevOps yo'nalishlariga qiziqadi, doimiy o'rganadi.",
     "experienceTitle": "Ish tajribasi",
+    "experience": [
+      {
+        "position": "Backend dasturchi",
+        "period": "2026-yil yanvar – hozir",
+        "company": "\"UZINFOCOM\" MChJ (Yagona integrator)",
+        "meta": "Huquqni muhofaza qiluvchi organlarning raqamli transformatsiyasi boshqarmasi, Toshkent",
+        "bullets": [
+          "Davlat veb-loyihalari uchun backend tizimlarni ishlab chiqish va qo'llab-quvvatlash: REST API'lar yaratish, Celery va Redis yordamida asinxron vazifalar va navbatlarni boshqarish, ma'lumotlar bazasi arxitekturasi va integratsiyalar (Python, Django, Django REST Framework, PostgreSQL).",
+          "O'zbekiston Respublikasi Hisob palatasi loyihasi backend qismini ishlab chiqishda ishtirok etgan — davlat moliyaviy nazorat tizimi.",
+          "Imom al-Buxoriy (eMehmon) loyihasining bir qismini ishlab chiqqan va yirik ishlab chiqarish tizimlarida katta tajriba orttirgan.",
+          "Qo'shimcha ravishda (ikkinchi darajali): xizmatlarni Docker, Kubernetes, Nginx, Prometheus, Grafana va Loki yordamida konteynerlash, joylash va monitoring qilish."
+        ]
+      }
+    ],
     "projectsTitle": "Loyihalar",
+    "projectsIntro": "UZINFOCOM'ga ishga kirishdan oldin mustaqil o'rganish maqsadida qilingan shaxsiy loyihalar.",
+    "projects": [
+      { "name": "Git Report", "description": "AI asosidagi commit tahlilchisi: GitLab/GitHub diff'larini o'qib, har bir dasturchi bo'yicha ish hisobotini LLM yordamida tuzadi.", "tech": "Python · LLM · GitLab API" },
+      { "name": "Voice AI Agent", "description": "Real vaqtda nutqni tushunib, ovozli javob beradigan AI-agent.", "tech": "Python · AI/LLM · Speech-to-Text" },
+      { "name": "Bellissimo Bot", "description": "Bellissimo uslubidagi Telegram bot — taom buyurtma qilish, menyu, savatcha va admin boshqaruvi.", "tech": "Python · Aiogram · PostgreSQL" },
+      { "name": "Education Platform", "description": "Kurslar, darslar va o'quvchilarni boshqarish uchun veb-platforma.", "tech": "Python · Django · PostgreSQL · HTML/CSS" }
+    ],
     "educationTitle": "Ta'lim",
-    "educationDegree": "Dasturiy injiniring",
-    "educationSchool": "Toshkent Axborot Texnologiyalari Universiteti (TATU)",
-    "skillsTitle": "Ko'nikmalar",
+    "educationDegree": "Dasturiy injiniring (bakalavr)",
+    "educationPeriod": "2024 – hozir (2028-yilda kutilmoqda)",
+    "educationSchool": "Toshkent Axborot Texnologiyalari Universiteti (TATU), Dasturiy injiniring fakulteti",
+    "skillsTitle": "Texnik ko'nikmalar",
+    "skills": [
+      { "label": "Dasturlash tillari", "items": "Python, C++, SQL" },
+      { "label": "Backend", "items": "Django, Django REST Framework, FastAPI, Flask, Celery, REST API" },
+      { "label": "Ma'lumotlar bazalari", "items": "PostgreSQL, MySQL, SQL Server, Redis" },
+      { "label": "DevOps", "items": "Docker, Kubernetes, Nginx, Prometheus, Grafana, Loki" },
+      { "label": "Vositalar", "items": "Git, Jira, Trello, PowerShell, Figma, Photoshop, Canva" }
+    ],
+    "certificationsTitle": "Sertifikatlar",
+    "certifications": [
+      "Advanced Django: Mastering Django and Django REST Framework Specialization — Coursera",
+      "Advanced Django: Introduction to Django Rest Framework — Coursera",
+      "Google Data Analytics Professional Certificate — Coursera",
+      "Google IT Support Professional Certificate — Coursera",
+      "Google Cybersecurity Professional Certificate — Coursera"
+    ],
     "languagesTitle": "Tillar",
     "languages": [
       { "name": "O'zbek", "level": "Ona tili" },
       { "name": "Rus", "level": "Yaxshi" },
-      { "name": "Ingliz", "level": "O'rta" }
+      { "name": "Ingliz", "level": "O'rta (faol o'rganmoqda)" }
     ],
-    "certificationsTitle": "Sertifikatlar va nashrlar",
     "present": "hozir"
   },
   "Footer": {
